@@ -1,0 +1,212 @@
+/* Toolbar */
+#placesToolbox {
+  border-bottom: 0;
+  background: url(chrome://browser/skin/icons/Toolbar-Background.png) top left repeat-x #fdfdfe;
+}
+
+#placesToolbar {
+  padding-right: 2px;
+  border: 0;
+}
+
+toolbarbutton {
+  list-style-image: url(chrome://browser/skin/icons/toolbar-small.png);
+}
+
+#back-button:not([disabled=true]):hover > .toolbarbutton-icon,
+#forward-button:not([disabled=true]):hover > .toolbarbutton-icon {
+  height: 20px;
+  width: 20px;
+  margin: 2px 4px 2px 2px;
+}
+
+toolbarbutton[disabled=true] .toolbarbutton-icon {
+  opacity: .3;
+}
+
+#back-button {
+  -moz-image-region: rect(0 24px 24px 0);
+}
+
+#forward-button {
+  -moz-image-region: rect(0 48px 24px 24px);
+}
+
+#clearDownloadsButton {
+  list-style-image: url(chrome://global/skin/CuteMenus/Cleanup.png);
+  -moz-image-region: auto;
+}
+
+#placesMenu > menu {
+  margin: 0 5px;
+  padding: 2px;
+}
+
+#placesMenu > menu[_moz-menuactive=true]  {
+  background: rgba(99,99,99,.15);
+}
+
+#organizeButton {
+  list-style-image: url(chrome://global/skin/CuteMenus/wizard.png);
+}
+#viewMenu {
+  list-style-image: url(chrome://global/skin/CuteMenus/view_detailed.png);
+}
+#maintenanceButton {
+  list-style-image: url(chrome://global/skin/CuteMenus/rebuild.png);
+}
+
+menuitem[oncommand="PlacesOrganizer.onRestoreMenuItemClick(this);"] {
+  list-style-image: url(chrome://browser/skin/places/calendar.png);
+}
+
+#placesView {
+  border-top: 1px solid #808080;
+  background-color: #e8e8ec;
+}
+
+.placesTree {
+  margin: 0;
+}
+
+#placesList {
+  width: 160px;
+  border-right: 0;
+  background-color: #f8f8f8;
+}
+
+#placeContent {
+  border: 0;
+  background-color: #f8f8f8;
+}
+
+#contentView {
+  margin: 0;
+}
+
+#placesView > splitter {
+  min-width: 2px;
+  border: 0;
+  background-color: #808080;
+}
+
+#infoPaneBox,#detailsDeck {
+  padding: 5px;
+  border-top: 1px solid #808080;
+  background: url(chrome://global/skin/icons/dialog-background.png) -30px 0 repeat-y #dadce4;
+}
+
+#searchbar {
+  margin: 6px -4px 0 2px;
+}
+
+#searchFilter {
+  margin: 2px 0 2px 5px;
+  padding: 1px 2px 1px 6px;
+  border: 1px solid #fff;
+  border-top-color: #808080;
+  border-right-color: #d0d0d0;
+  border-left-color: #a0a0a0;
+  border-radius: 11px;
+  background-color: #f2f2f2;
+}
+
+#searchFilter .textbox-input-box {
+  min-width: 150px;
+}
+
+.textbox-input-closebutton {
+  width: 16px;
+  height: 16px;
+  border: 0;
+  border-radius: 0;
+  list-style-image: url(chrome://global/skin/icons/close.png);
+  -moz-image-region: rect(0 16px 16px 0);
+  background: none;
+  cursor: default;
+}
+
+.textbox-input-closebutton:hover {
+  -moz-image-region: rect(0 32px 16px 16px);
+  background: none;
+}
+
+.textbox-input-closebutton:hover:active {
+  -moz-image-region: rect(0 48px 16px 32px);
+  background: none;
+}
+
+.small {
+  margin: 0 1px;
+}
+
+.textbox-input {
+  min-height: 17px;
+  padding-top: 2px !important;
+}
+
+#defaultView {
+  background-color: #e8e8ec;
+}
+
+#infoBoxExpanderLabel {
+  margin: 0;
+  padding: 5px;
+}
+
+#searchModifiers {
+  border-top: 1px solid #fff;
+  background: url(chrome://browser/skin/icons/Title-Background.png) top left repeat-x #e8e8ec;
+}
+
+#organizerScopeBar {
+  padding-right: 3px;
+}
+
+#organizerScopeBar > toolbarbutton {
+  padding: 2px 5px !important;
+}
+
+#scopeBarAll {
+  -moz-image-region: rect(0 240px 24px 216px);
+}
+
+#scopeBarFolder,
+#scopeBarHistory {
+  -moz-image-region: rect(0 264px 24px 240px);
+}
+
+#scopeBarDownloads {
+  -moz-image-region: rect(0 216px 24px 192px);
+}
+
+#organizerScopeBar > #saveSearch {
+  margin: 1px 2px;
+  padding: 0 3px;
+}
+
+#placeContent treechildren::-moz-tree-row {
+  border-bottom-color: rgba(214,214,214,.15);
+}
+
+#placeContent treechildren::-moz-tree-row(selected, focus) {
+  border-bottom-color: #00f;
+}
+
+#scopeBarTitle {
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+#previewBox {
+  border-right: 1px solid #404040 !important;
+}
+
+#itemsCountText,
+#selectItemDescription {
+  color: #808080;
+}
+
+.no-margin-button {
+  min-width: 0em;
+}

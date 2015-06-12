@@ -1,0 +1,259 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+@namespace html url(http://www.w3.org/1999/xhtml);
+.controlBar {
+  height: 22px;
+  background: url(videobackground.png) bottom left repeat-x;
+}
+
+.playButton {
+  position: relative;
+  min-height: 22px;
+  min-width: 22px;
+  margin-right: -22px;
+  padding: 0;
+  border: 0;
+  background: url(pauseButton.png) no-repeat center;
+}
+
+.playButton[paused] {
+  background: url(chrome://global/skin/media/playButton.png) no-repeat center;
+}
+
+.muteButton {
+  min-height: 22px;
+  min-width: 22px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: url(muteButton.png) no-repeat center;
+}
+
+.muteButton[muted] {
+  background: url(chrome://global/skin/media/unmuteButton.png) no-repeat center;
+}
+
+.muteButton[noAudio] {
+  background: url(chrome://global/skin/media/noAudio.png) no-repeat center;
+}
+
+.fullscreenButton {
+  min-height: 22px;
+  min-width: 22px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: -moz-image-rect(url(fullscreenButton.png), 0, 16, 16, 0) no-repeat center;
+}
+
+.fullscreenButton[fullscreened] {
+  background-image: -moz-image-rect(url(fullscreenButton.png), 0, 32, 16, 16);
+}
+
+.volumeStack {
+  position: relative;
+  overflow: hidden;
+  width: 24px;
+  height: 70px;
+  margin: -70px 2px 22px -26px;
+  padding: 4px 0 2px;
+  border-radius: 4px 4px 0 0;
+  background-color: rgba(200,200,200,.85);
+}
+/*
+.volumeStack {
+  width: 35px;
+  margin: 0 7px;
+  overflow: hidden;
+}
+*/
+.volumeControl[orient=vertical] {
+  min-height: 64px;
+}
+
+.volumeBackgroundBar {
+  margin: 0 8px;
+  border-radius: 4px;
+  background-color: rgba(255,255,255,.5);
+}
+/*
+.volumeBackgroundBar {
+  margin: 9px 0;
+  background-color: transparent;
+  background-image: linear-gradient(#eee,#eee),linear-gradient(transparent,transparent);
+  background-clip: content-box, padding-box;
+}
+*/
+.durationBox {
+  -moz-box-pack: center;
+}
+
+.durationLabel {
+  color: #404040;
+  font: 11px sans-serif;
+  margin: -1px 5px 0 -22px;
+  padding-left: 5px;
+}
+
+.positionLabel {
+  display: none;
+}
+
+.backgroundBar {
+  margin: 8px 22px;
+}
+
+.bufferBar, .progressBar {
+  min-width: 0;
+  min-height: 0;
+  margin: 8px 22px;
+  background: transparent;
+}
+
+.bufferBar .progress-bar {
+  margin-left: 2px;
+  border-radius: 0 4px 4px 0;
+  background-image: url(chrome://global/skin/progressmeter/background.png);
+}
+
+.progressBar .progress-bar {
+  border-radius: 4px 0 0 4px;
+  background: #1f9afd;
+}
+
+.scale-slider {
+  margin: 0;
+  background: none;
+}
+
+.scrubber .scale-slider {
+  margin-top: -9px;
+  margin-bottom: 10px;
+}
+
+.scrubber .scale-thumb {
+  background: transparent;
+}
+
+.timeThumb {
+  -moz-box-pack: center;
+  min-width: 45px;
+  min-height: 30px;
+  background: url(scrubberThumb.png) no-repeat top center;
+}
+
+.timeThumb[showhours=true] {
+  background: url(scrubberThumbWide.png) no-repeat top center;
+}
+
+.timeLabel {
+  color: #ccc;
+  font: 10px sans-serif;
+}
+
+.statusOverlay {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  background-color: rgba(0,0,0,.55);
+}
+
+.statusIcon {
+  height: 36px;
+  width: 36px;
+  margin-bottom: 24px;
+}
+
+.statusIcon[type=throbber] {
+  background: url(throbber.png) no-repeat center;
+}
+
+.statusIcon[type=throbber][stalled] {
+  background: url(stalled.png) no-repeat center;
+}
+
+.statusIcon[type=error] {
+  background: url(error.png) no-repeat center;
+}
+
+.clickToPlay {
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  width: 64px;
+  height: 64px;
+  background-image: url(clicktoplay-bgtexture.png),url(videoClickToPlayButton.svg);
+  background-repeat: repeat, no-repeat;
+  background-position: center, center;
+  background-size: auto, 64px 64px;
+  background-color: hsla(0,0%,10%,.5);
+  opacity: .7;
+}
+
+.clickToPlay:hover {
+  opacity: 1;
+}
+
+html|*.statsDiv {
+  position: relative;
+}
+
+html|td {
+  height: 1em;
+  max-height: 1em;
+  padding: 0 2px;
+}
+
+html|table {
+  position: absolute;
+  table-layout: fixed;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  min-width: 100%;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+  border-collapse: collapse;
+  background: rgba(68,68,68,.7);
+}
+
+.controlBar:not([immediate]) {
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+.controlBar[fadeout] {
+  opacity: .0;
+}
+.volumeStack:not([immediate]) {
+  transition-property: opacity, margin-top;
+  transition-duration: 200ms, 200ms;
+}
+.volumeStack[fadeout] {
+  opacity: .0;
+  margin-top: 0;
+}
+.clickToPlay {
+  transition-property: opacity, background-size;
+  transition-duration: 400ms, 400ms;
+}
+.clickToPlay[fadeout] {
+  background-size: auto, 192px 192px;
+  opacity: 0;
+}
+.clickToPlay[fadeout][immediate] {
+  transition-property: opacity, background-size;
+  transition-duration: 0s, 0s;
+}
+.statusOverlay:not([immediate]) {
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-delay: 750ms;
+}
+.statusOverlay[fadeout] {
+  opacity: .0;
+}
+
+.errorLabel {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  color: #bbb;
+  padding: 0 10px;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+}

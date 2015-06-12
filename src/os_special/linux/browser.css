@@ -1,0 +1,55 @@
+#navigator-toolbox[tabsontop=true] > #toolbar-menubar[autohide=true] ~ #TabsToolbar:not([inFullscreen]) {
+  margin: 0;
+}
+
+#navigator-toolbox[tabsontop=true] #TabsToolbar:not(:-moz-lwtheme) {
+ -moz-appearance: menubar;
+}
+
+#appmenu-toolbar-button {
+  -moz-box-orient: horizontal;
+  height: 18px;
+  color: #fff;
+  text-shadow: 0 0 2px #333;
+  margin: 0 1px;
+  padding: 0 6px;
+  list-style-image: url(chrome://branding/content/icon16.png);
+  border: 1px solid rgba(0,0,0,.5);
+  border-radius: 4px;
+  background-color: #0b86e0;
+  background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.4) 30%, rgba(255,255,255,0) 50%);
+  background-clip: padding-box;
+  box-shadow: 0 0 5px rgba(255,255,255,.5) inset;
+}
+
+#appmenu-toolbar-button:hover:not(:active):not([open]) {
+  background-color: #1f9afd;
+}
+
+#appmenu-toolbar-button:hover:active,
+#appmenu-toolbar-button[open] {
+  background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.2) 10%, transparent 60%);
+  box-shadow: 0 0 4px rgba(0,0,0,.3) inset;
+}
+
+#appmenu-toolbar-button > .toolbarbutton-text {
+  display: none;
+}
+
+#appmenu-toolbar-button > .toolbarbutton-menu-dropmarker {
+  margin: 0 0 0 4px;
+  list-style-image: url(chrome://browser/skin/icons/appmenu-dropmarker.png);
+  -moz-image-region: auto;
+}
+
+.appmenu-edit-button > .toolbarbutton-icon {
+  width: 16px !important;
+  height: 16px !important;
+  margin: 0 1px 1px 0 !important;
+}
+
+.appmenu-edit-button:not([disabled=true]):hover > .toolbarbutton-icon {
+  width: 14px !important;
+  height: 14px !important;
+  margin: 1px 2px 2px 1px !important;
+}

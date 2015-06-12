@@ -1,0 +1,69 @@
+body {
+  font: message-box;
+  font-size: 100%;
+  margin-top: 2em;
+  background-color: #dadce4;
+}
+
+p {
+  font-size: .8em;
+}
+
+#error-box {
+  padding-left: 20px;
+  background: url(chrome://global/skin/icons/information-16.png) no-repeat left 4px;
+}
+
+#main-error-msg {
+  font-weight: bold;
+  color: #4b4b4b;
+}
+
+#button-box {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+@media (min-width: 300px) {
+  #error-box {
+    max-width: 50%;
+    min-height: 36px;
+    margin: 0 auto;
+    padding-left: 38px;
+    background-image: url(chrome://browser/skin/icons/alert-message.png);
+  }
+
+  button {
+    width: auto !important;
+    min-width: 150px;
+  }
+}
+
+@media (min-width: 780px) {
+  #error-box {
+    max-width: 30%;
+  }
+}
+
+button {
+  -moz-user-select: none;
+  font: message-box;
+  font-size: 0.6875em;
+  width: 100%;
+  margin: 2px 0;
+  padding: 2px 6px;
+  line-height: 1.2;
+  border: 1px solid;
+  -moz-border-top-colors: #808080 #fff;
+  -moz-border-right-colors: #808080 #808080;
+  -moz-border-bottom-colors: #808080 #808080;
+  -moz-border-left-colors: #808080 #fff;
+  border-radius: 3px;
+  background: url(chrome://global/skin/button/body.png) repeat-x top left #fafafb
+
+}
+
+button:hover {
+  background: url(chrome://global/skin/button/body-hover.png) repeat-x top left #b8e9fe;
+}

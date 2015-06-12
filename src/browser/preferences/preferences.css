@@ -1,0 +1,215 @@
+@import url(chrome://global/skin/filefield.css);
+
+/* Global Styles */
+radio[pane=paneMain] {
+  list-style-image: url(chrome://browser/skin/preferences/main1.png);
+}
+radio[pane=paneMain]:hover  {
+  list-style-image: url(chrome://browser/skin/preferences/main.png);
+}
+radio[pane=paneMain][selected=true] {
+  list-style-image: url(chrome://browser/skin/preferences/main.png);
+}
+
+radio[pane=panePrivacy] {
+  list-style-image: url(chrome://browser/skin/preferences/privacy1.png);
+}
+radio[pane=panePrivacy]:hover {
+  list-style-image: url(chrome://browser/skin/preferences/privacy.png);
+}
+radio[pane=panePrivacy][selected=true]  {
+  list-style-image: url(chrome://browser/skin/preferences/privacy.png);
+}
+
+radio[pane=paneContent] {
+  list-style-image: url(chrome://browser/skin/preferences/content1.png);
+}
+radio[pane=paneContent]:hover {
+  list-style-image: url(chrome://browser/skin/preferences/content.png);
+}
+radio[pane=paneContent][selected=true]  {
+  list-style-image: url(chrome://browser/skin/preferences/content.png);
+}
+
+radio[pane=paneTabs] {
+  list-style-image: url(chrome://browser/skin/preferences/tabs1.png) !important;
+}
+radio[pane=paneTabs]:hover {
+  list-style-image: url(chrome://browser/skin/preferences/tabs.png) !important;
+}
+radio[pane=paneTabs][selected=true]  {
+  list-style-image: url(chrome://browser/skin/preferences/tabs.png) !important;
+}
+
+radio[pane=paneAdvanced] {
+  list-style-image: url(chrome://browser/skin/preferences/advanced1.png);
+}
+radio[pane=paneAdvanced]:hover {
+  list-style-image: url(chrome://browser/skin/preferences/advanced.png);
+}
+radio[pane=paneAdvanced][selected=true]  {
+  list-style-image: url(chrome://browser/skin/preferences/advanced.png);
+}
+
+radio[pane=paneApplications] {
+  list-style-image: url(chrome://browser/skin/preferences/applications1.png);
+}
+radio[pane=paneApplications]:hover {
+  list-style-image: url(chrome://browser/skin/preferences/applications.png);
+}
+radio[pane=paneApplications][selected=true]  {
+  list-style-image: url(chrome://browser/skin/preferences/applications.png);
+}
+
+radio[pane=paneSecurity] {
+  list-style-image: url(chrome://browser/skin/preferences/security1.png);
+}
+radio[pane=paneSecurity]:hover {
+  list-style-image: url(chrome://browser/skin/preferences/security.png);
+}
+radio[pane=paneSecurity][selected=true]  {
+  list-style-image: url(chrome://browser/skin/preferences/security.png);
+}
+
+radio[pane=paneSync] {
+  list-style-image: url(chrome://browser/skin/preferences/sync1.png);
+}
+radio[pane=paneSync]:hover {
+  list-style-image: url(chrome://browser/skin/preferences/sync.png);
+}
+radio[pane=paneSync][selected=true]  {
+  list-style-image: url(chrome://browser/skin/preferences/sync.png);
+}
+
+groupbox {
+  margin: 5px 0;
+}
+
+/* General Pane */
+#browserHomePage {
+  padding: 2px 4px;
+}
+
+/* Applications Pane */
+#paneApplications {
+  padding: 8px 0 0;
+}
+#paneApplications #filter {
+  margin: 2px 8px;
+}
+
+#handlersView {
+  margin: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+#BrowserPreferences[animated=true] #handlersView {
+  height: 25em;
+}
+
+#BrowserPreferences[animated="false"] #handlersView {
+  -moz-box-flex: 1;
+}
+
+#clearCacheButton {
+  list-style-image: url(chrome://global/skin/CuteMenus/Cleanup.png);
+}
+
+.inline-link {
+  cursor: pointer;
+  color: #1f9afd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.inline-link:hover {
+  color: #00f;
+}
+
+.inline-link:hover:active {
+  color: #f00;
+}
+
+/* Modeless Window Dialogs */
+.windowDialog,
+.windowDialog prefpane {
+  padding: 0;
+  background: url(chrome://global/skin/icons/dialog-background.png) repeat-y #dadce4;
+}
+
+/* Cookies Manager */
+
+.actionButtons {
+  margin: 0 3px 6px;
+}
+
+#cookiesChildren::-moz-tree-image(domainCol) {
+  width: 16px;
+  height: 16px;
+  margin: 0 2px;
+  list-style-image: url(chrome://global/skin/CuteMenus/source.png) !important;
+}
+
+#cookiesChildren::-moz-tree-image(domainCol, container) {
+  list-style-image: url(chrome://browser/skin/icons/folder_closed.png);
+}
+
+#cookiesChildren::-moz-tree-image(domainCol, container, open) {
+  list-style-image: url(chrome://browser/skin/icons/folder_open.png);
+}
+
+#cookieInfoBox {
+  margin: 8px 2px;
+  padding: 2px;
+  border: 1px inset #fff;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+#cookieInfoBox textbox {
+  background-color: #f2f2f2;
+}
+
+#backgroundBox {
+  background-color: #fff;
+  opacity: .5;
+}
+
+/* Sync Pane */
+#syncDesc {
+  padding: 0 8em;
+}
+
+.syncGroupBox {
+  padding: 10px;
+}
+
+#accountCaptionImage {
+  margin-right: 2px;
+  list-style-image: url(chrome://mozapps/skin/profile/profileicon.png);
+}
+
+#syncAddDeviceLabel {
+  margin-top: 1em;
+  margin-bottom: 1em;
+ }
+
+#syncEnginesList {
+  border-radius: 5px;
+  background-color: #dadce4;
+}
+
+.syncGroupBox .menu-iconic-icon {
+  margin-left: 0;
+}
+
+/* Advanced Pane */
+#advancedPrefs {
+  padding-bottom: 8px;
+}
+
+.bottomBox {
+  padding-bottom: 2px;
+}

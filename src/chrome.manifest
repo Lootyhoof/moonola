@@ -1,0 +1,10 @@
+skin	browser	moonola browser/
+skin	communicator	moonola communicator/
+skin	help	moonola help/
+skin	global	moonola global/
+skin	mozapps	moonola mozapps/
+
+skin	os_special	moonola os_special/mac/	        os=Darwin
+skin	os_special	moonola os_special/linux/	os=Linux
+skin	os_special	moonola os_special/XP/		os=WINNT osversion<6
+skin	os_special	moonola os_special/aero/	os=WINNT osversion>=6

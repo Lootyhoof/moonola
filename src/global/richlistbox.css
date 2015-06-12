@@ -1,0 +1,28 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+richlistbox {
+  -moz-appearance: none;
+  color: #000;
+  margin: 2px 4px;
+  border: 1px solid #7f9db9;
+  background-color: #f2f2f2;
+}
+
+richlistbox[disabled=true] {
+  color: #a8a8a8;
+}
+
+richlistitem[selected=true] {
+  color: #0041aa;
+  background: url(chrome://mozapps/skin/downloads/downloadSelected.png) center;
+  background-size: auto 100%;
+}
+
+richlistbox[seltype=multiple]:focus > richlistitem[current] {
+  outline: 1px dotted #fff;
+  outline-offset: -1px;
+}
+
+richlistbox[seltype=multiple]:focus > richlistitem[current][selected] {
+  outline: 1px dotted #f3d982;
+}

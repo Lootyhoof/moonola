@@ -1,0 +1,98 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* splitter (horizontal) */
+
+splitter {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  cursor: ew-resize;
+  min-width: 6px;
+  border-right: 1px solid #404040;
+  border-left: 1px solid#fff;
+  background-color: #dadce4;
+}
+
+/* splitter (vertical) */
+
+splitter[orient=vertical] {
+  cursor: ns-resize;
+  min-width: 0;
+  min-height: 6px;
+  margin: -1px 0;
+  border: 0;
+  border-top: 1px  solid #fff;
+  border-bottom: 1px solid #404040;
+}
+
+splitter:hover {
+  background-color: #808080;
+}
+
+splitter:hover:active {
+  background-color: #1f9afd;
+}
+
+splitter[state=collapsed][collapse=before],
+splitter[state=collapsed][substate=before] {
+  cursor: e-resize;
+}
+
+splitter[state=collapsed][collapse=after],
+splitter[state=collapsed][substate=after] {
+  cursor: w-resize;
+}
+
+splitter[disabled=true] {
+  cursor: default !important;
+}
+
+/* splitter grippy */
+
+grippy {
+  cursor: pointer;
+  margin: 0;
+  min-width: 5px;
+  min-height: 37px;
+}
+
+splitter[orient=vertical] > grippy {
+  margin: 0;
+  min-width: 37px;
+  min-height: 5px;
+}
+
+/* vertical grippies */
+splitter[collapse=before] > grippy {
+  background: url(chrome://global/skin/splitter/grip-vrt-before.gif) center no-repeat;
+}
+
+splitter[collapse=after] > grippy {
+  background: url(chrome://global/skin/splitter/grip-vrt-after.gif) center no-repeat;
+}
+
+/* horizontal grippies */
+splitter[collapse=before][orient=vertical] > grippy {
+  background: url(chrome://global/skin/splitter/grip-hrz-before.gif) center no-repeat;
+}
+
+splitter[collapse=after][orient=vertical] > grippy {
+  background: url(chrome://global/skin/splitter/grip-hrz-after.gif) center no-repeat;
+}
+
+/* vertical grippies */
+splitter[collapse=before][state=collapsed] > grippy {
+  background: url(chrome://global/skin/splitter/grip-vrt-after.gif) center no-repeat;
+}
+
+splitter[collapse=after][state=collapsed] > grippy {
+  background: url(chrome://global/skin/splitter/grip-vrt-before.gif) center no-repeat;
+}
+
+/* horizontal grippies */
+splitter[collapse=before][state=collapsed][orient=vertical] > grippy {
+  background: url(chrome://global/skin/splitter/grip-hrz-after.gif) center no-repeat;
+}
+
+splitter[collapse=after][state=collapsed][orient=vertical] > grippy {
+  background: url(chrome://global/skin/splitter/grip-hrz-before.gif) center no-repeat;
+}

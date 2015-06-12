@@ -1,0 +1,176 @@
+/* main panel */
+#editBookmarkPanel:not([type=arrow]) {
+  padding: 0;
+  border: 1px solid #404040;
+  background: url(chrome://global/skin/icons/dialog-background.png) repeat-y #dadce4;
+}
+
+#editBookmarkPanel > #editBookmarkPanelContent {
+  margin: 0;
+  padding: 5px;
+}
+
+#editBookmarkPanel > #editBookmarkPanelBottomButtons {
+  padding: 5px;
+}
+
+#editBookmarkPanelHeader,
+#editBookmarkPanelContent {
+ margin-bottom: .5em;
+}
+
+#editBookmarkPanel > hbox {
+  min-height: 52px;
+}
+
+#editBookmarkPanelTitle {
+  font-size: 130%;
+  margin-left: 3px;
+}
+
+#editBookmarkPanelStarIcon {
+  width: 48px;
+  height: 48px;
+  margin-right: 5px;
+  list-style-image: url(chrome://browser/skin/places/starred48.png);
+}
+
+#editBookmarkPanelStarIcon[unstarred] {
+  list-style-image: url(chrome://browser/skin/places/unstarred48.png);
+}
+
+/* folder menulist */
+.folder-icon > .menu-iconic-left {
+  display: -moz-box;
+}
+
+.folder-icon {
+  list-style-image: url(chrome://browser/skin/icons/folder_closed.png) !important;
+}
+
+#editBMPanel_folderRow,
+#editBMPanel_folderTree,
+#editBMPanel_tagsSelector {
+  margin: 2px 3px;
+  border-top-color: #888;
+  border-right-color: #ccc;
+  border-bottom-color: #ccc;
+  border-left-color: #888;
+}
+
+#editBMPanel_loadInSidebarCheckbox {
+  padding-bottom: 5px;
+}
+
+/* expanders */
+.expander-up,
+.expander-down {
+  margin: 1px 3px 1px 1px;
+}
+
+.expander-up {
+  list-style-image: url(chrome://global/skin/arrow/arrow-up.gif);
+}
+
+.expander-down {
+  list-style-image: url(chrome://global/skin/arrow/arrow-dn.gif);
+}
+
+.expander-up > hbox > .button-icon,
+.expander-down > hbox > .button-icon {
+  margin: 0 0 0 2px;
+}
+
+#editBookmarkPanelContent {
+  min-width: 26em;
+}
+
+/* name picker */
+#editBMPanel_namePicker[droppable=false] {
+  cursor: text;
+  height: 1.55em;
+  margin: 2px 3px;
+  padding: 1px 2px;
+  border: 1px solid;
+  -moz-border-top-colors: #888;
+  -moz-border-right-colors: #ccc;
+  -moz-border-bottom-colors: #ccc;
+  -moz-border-left-colors: #888;
+  border-radius: 0;
+  background: #f2f2f2;
+}
+
+#editBMPanel_namePicker[droppable=false][disabled=true] {
+  cursor: default;
+  color: #808080;
+  -moz-border-top-colors: #f00;
+  -moz-border-right-colors: #f00;
+  -moz-border-bottom-colors: #f00;
+  -moz-border-left-colors: #f00;
+}
+
+#editBMPanel_namePicker[droppable=false] > .menulist-editable-box > .menulist-editable-input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#editBMPanel_tagsField #treecolAutoCompleteValue {
+  visibility: collapse;
+}
+
+/* Hide the drop marker and the popup. */
+
+#editBMPanel_namePicker[droppable=false] > .menulist-dropmarker,
+#editBMPanel_namePicker[droppable=false] > menupopup {
+  display: none;
+}
+
+#editBMPanel_folderMenuList {
+  padding: 0 3px;
+}
+
+#editBMPanel_folderMenuList > menupopup {
+  background: url(chrome://global/skin/menu/menuback.png) repeat-y #dadce4;
+}
+
+#editBMPanel_folderMenuList menuitem {
+  padding: 1px 0 1px 9px;
+}
+
+/* bookmark panel dropdown icons */
+
+#editBMPanel_folderMenuList[selectedIndex="0"],
+#editBMPanel_toolbarFolderItem {
+  list-style-image: url(chrome://global/skin/CuteMenus/bookmarkbar.png) !important;
+}
+
+#editBMPanel_folderMenuList[selectedIndex="1"],
+#editBMPanel_bmRootItem {
+  list-style-image: url(chrome://global/skin/CuteMenus/menuedit.png) !important;
+}
+
+#editBMPanel_folderMenuList[selectedIndex="2"],
+#editBMPanel_unfiledRootItem {
+  list-style-image: url(chrome://browser/skin/places/unsortedBookmarks.png) !important;
+}
+
+/* Action buttons */
+
+#editBMPanel_newFolderButton {
+  list-style-image: url(chrome://browser/skin/icons/folder-add.png);
+}
+
+#editBookmarkPanel > #editBookmarkPanelBottomButtons {
+  min-height: 26px;
+}
+
+#editBookmarkPanelDeleteButton {
+  margin: 3px 5px;
+  list-style-image: url(chrome://global/skin/CuteMenus/stop.png);
+}
+
+#editBookmarkPanelDoneButton {
+  margin: 3px 5px;
+  list-style-image: url(chrome://global/skin/CuteMenus/accept.png);
+}

@@ -1,0 +1,95 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+@namespace html url(http://www.w3.org/1999/xhtml);
+
+/* scrollbar */
+
+scrollbar {
+  -moz-binding: url(chrome://global/content/bindings/scrollbar.xml#scrollbar);
+  cursor: default;
+  background: url(chrome://global/skin/scrollbar/track-horizontal.png) repeat-x #f0e9dd;
+}
+
+scrollbar[orient=horizontal] {
+  height: 13px;
+}
+
+scrollbar[orient=vertical] {
+  width: 13px;
+  background: url(chrome://global/skin/scrollbar/track-vertical.png) repeat-y #f0e9dd;
+}
+
+thumb[orient=vertical] {
+  min-height: 10px;
+  border-top: 1px solid #2c649f;
+  border-bottom: 1px solid #2c649f;
+  background: url(chrome://global/skin/scrollbar/thumb-vert.png) repeat-y top left;
+}
+thumb[orient=vertical]:hover,
+thumb[orient=vertical]:active {
+  background-image: url(chrome://global/skin/scrollbar/thumb-vert-hover.png);
+}
+
+thumb[orient=horizontal] {
+  min-width: 10px;
+  border-left: 1px solid #2c649f;
+  border-right: 1px solid #2c649f;
+  background: url(chrome://global/skin/scrollbar/thumb-horiz.png) repeat-x top left;
+}
+thumb[orient=horizontal]:hover,
+thumb[orient=horizontal]:active {
+  background-image: url(chrome://global/skin/scrollbar/thumb-horiz-hover.png);
+}
+
+scrollcorner {
+  background: url(chrome://global/skin/scrollbar/corner.png) no-repeat;
+}
+
+scrollbarbutton {
+  min-width: 13px;
+  min-height: 13px;
+  background-repeat: no-repeat;
+}
+
+/*right Arrow*/
+scrollbarbutton[type=increment] {
+  background-image: url(chrome://global/skin/scrollbar/arrow-right.png);
+}
+scrollbarbutton[type=increment]:hover {
+  background-image: url(chrome://global/skin/scrollbar/arrow-right2.png);
+}
+scrollbarbutton[type=increment]:active {
+  background-image: url(chrome://global/skin/scrollbar/arrow-right3.png);
+}
+
+/*down Arrow*/
+scrollbar[orient=vertical] > scrollbarbutton[type=increment] {
+  background-image: url(chrome://global/skin/scrollbar/arrow-down.png);
+}
+scrollbar[orient=vertical] > scrollbarbutton[type=increment]:hover {
+  background-image: url(chrome://global/skin/scrollbar/arrow-down2.png);
+}
+scrollbar[orient=vertical] > scrollbarbutton[type=increment]:active {
+  background-image: url(chrome://global/skin/scrollbar/arrow-down3.png);
+}
+
+/*left Arrow*/
+scrollbarbutton[type=decrement] {
+   background-image: url(chrome://global/skin/scrollbar/arrow-left.png);
+}
+scrollbarbutton[type=decrement]:hover {
+   background-image: url(chrome://global/skin/scrollbar/arrow-left2.png);
+}
+scrollbarbutton[type=decrement]:active {
+   background-image: url(chrome://global/skin/scrollbar/arrow-left3.png);
+}
+
+/*up Arrow*/
+scrollbar[orient=vertical] > scrollbarbutton[type=decrement] {
+   background-image: url(chrome://global/skin/scrollbar/arrow-up.png);
+}
+scrollbar[orient=vertical] > scrollbarbutton[type=decrement]:hover {
+   background-image: url(chrome://global/skin/scrollbar/arrow-up2.png);
+}
+scrollbar[orient=vertical] > scrollbarbutton[type=decrement]:active {
+   background-image: url(chrome://global/skin/scrollbar/arrow-up3.png);
+}

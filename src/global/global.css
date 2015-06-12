@@ -1,0 +1,481 @@
+@import url(chrome://global/locale/intl.css);
+@import url(chrome://global/skin/cutemenus.css);
+@import url(chrome://global/skin/Add-ons.css);
+@import url(chrome://global/skin/resizer.css);
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+radio {
+  -moz-binding: url(chrome://global/skin/globalBindings.xml#radio);
+}
+
+menulist > menupopup,
+.menulist-menupopup {
+  -moz-binding: url(chrome://global/content/bindings/popup.xml#popup-scrollbars);
+}
+
+.menulist-compact {
+  -moz-binding: url(chrome://global/content/bindings/menulist.xml#menulist-compact);
+}
+
+progressmeter[mode=undetermined] {
+  -moz-binding: url(chrome://global/content/bindings/progressmeter.xml#progressmeter-undetermined);
+}
+
+window, page,
+dialog, wizard,
+prefwindow {
+  color: #000;
+  font: message-box;
+  background-color: #dadce4;
+}
+
+window.dialog {
+  padding: 8px 10px 10px 8px;
+}
+
+.message-icon,
+.alert-icon,
+.error-icon,
+.question-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.message-icon {
+  list-style-image: url(chrome://browser/skin/icons/alert-message.png);
+}
+
+.alert-icon {
+  list-style-image: url(chrome://browser/skin/icons/alert-warning.png);
+}
+
+.error-icon {
+  list-style-image: url(chrome://browser/skin/icons/alert-error.png);
+}
+
+.question-icon {
+  list-style-image: url(chrome://browser/skin/icons/alert-question.png);
+}
+
+#infoContainer {
+  -moz-box-pack: center;
+}
+
+iframe {
+  width: 100px;
+  height: 100px;
+  min-width: 10px;
+  min-height: 10px;
+  border: 0;
+}
+
+/* statusbar */
+statusbar {
+  min-height: 22px !important;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #adaebb;
+  background: url(chrome://browser/skin/icons/Statusbar-background.png) bottom left repeat-x #fdfdfe;
+}
+
+statusbarpanel {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  padding: 0 4px;
+  background-color: transparent;
+}
+
+statusbarpanel:hover > image {
+  width: 14px;
+  height: 14px;
+  margin: 1px;
+}
+
+.statusbar-resizerpanel {
+  -moz-box-align: end;
+  -moz-box-pack: end;
+  padding: 0;
+  border: 0;
+}
+
+.statusbarpanel-iconic {
+  padding: 0 2px;
+}
+
+window:not([active=true]) menubar > menu {
+  color: #aaa;
+}
+
+menubar:not([active=true]) > menu:not(:-moz-window-inactive) {
+ color: #000;
+}
+
+sidebarheader {
+  min-height: 25px;
+  text-shadow: 0 1px 0 #eee;
+  border-bottom: 1px solid #808080;
+  border-top: 1px solid #808080;
+  background: url(chrome://browser/skin/icons/Toolbar-Background.png) center left repeat-x #fdfdfe;
+}
+
+sidebarheader > label {
+  font-weight: bold;
+  font-size: 10pt;
+  letter-spacing: 6px !important;
+}
+
+.toolbar-focustarget {
+  -moz-user-focus: ignore !important;
+}
+
+/* miscellaneous formatting */
+:root:-moz-lwtheme,
+[lwthemefooter=true] {
+  -moz-appearance: none;
+}
+
+:root:-moz-lwtheme-darktext {
+  text-shadow: 0 -.5px 2px #fff;
+}
+
+:root:-moz-lwtheme-brighttext {
+  text-shadow: 1px 1px 2px #000;
+}
+
+statusbar:-moz-lwtheme {
+  background: none;
+}
+
+sidebarheader:-moz-lwtheme {
+  text-shadow: none;
+  background: none;
+}
+
+.inset {
+  margin: 0 2px;
+  border: 1px solid #808080;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+}
+
+.outset {
+  border: 1px solid #fff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+}
+
+/* separators */
+separator, separator[orient=horizontal] {
+  height: 1.5em;
+}
+
+separator[orient=vertical] {
+  width: 1.5em;
+}
+
+separator.thin, separator.thin[orient=horizontal] {
+  height: 0.5em;
+}
+
+separator.thin[orient=vertical] {
+  width: 0.5em;
+}
+
+separator.groove,
+separator.groove[orient=horizontal] {
+  height: 0;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #fff;
+}
+
+separator.groove[orient=vertical] {
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+  border-left: 1px solid #808080;
+  border-right: 1px solid #fff;
+}
+
+.small-margin {
+  margin: 1px 2px;
+}
+
+.plain {
+  margin: 0 !important;
+  padding: 0;
+  border: 0;
+}
+
+description, label {
+  cursor: default;
+}
+
+description {
+  margin: 1px 5px 4px;
+}
+
+label {
+  margin: 1px 5px 2px;
+}
+
+label[disabled=true] {
+  color: #808080;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.tooltip-label {
+  margin: 0px;
+}
+
+.header {
+  font-weight: bold;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.indent {
+  margin-left: 23px;
+}
+
+.box-padded {
+  padding: 5px;
+}
+
+.spaced {
+  margin: 3px 5px 4px;
+}
+
+.wizard-box {
+  padding: 20px 44px 10px;
+}
+
+.text-link {
+  cursor: pointer;
+  color: #1f9afd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.text-link:hover {
+  color: #00f;
+}
+
+.text-link:hover:active,
+.text-link[visited=true] {
+  color: #f00;
+}
+
+#FontsDialog {
+  padding: 0;
+  background:url(chrome://global/skin/icons/dialog-background.png) -30px 0 repeat-y #dadce4;
+}
+
+#FontsDialog menuseparator,
+#channelMenulist menuseparator {
+  margin-left: 3px;
+}
+
+#FontsDialog .prefWindow-dlgbuttons {
+  margin: 0;
+}
+
+.tabs-newbutton {
+  list-style-image:url(chrome://global/skin/CuteMenus/new-tab.png) !important;
+  -moz-image-region:rect(0 16px 16px 0);
+  opacity: 1;
+}
+
+.tabs-newbutton:hover {
+  list-style-image:url(chrome://global/skin/CuteMenus/new-tab.png) !important;
+}
+
+/* autoscroll popup */
+#autoscroller,
+.autoscroller {
+  height: 28px;
+  width: 28px;
+  margin: -14px;
+  padding: 0 !important;
+  border: 0 !important;
+  background: url(chrome://global/skin/icons/autoscroll.png) right top transparent !important;
+}
+
+#autoscroller[scrolldir=NS],
+.autoscroller[scrolldir=NS] {
+  background-position: right center !important;
+}
+
+#autoscroller[scrolldir=EW],
+.autoscroller[scrolldir=EW] {
+  background-position: right bottom !important;
+}
+
+/* Import wizard */
+#migrationWizard #dataSources {
+  -moz-appearance: none !important;
+  margin: 2px 0 0;
+  border-top: 1px solid #808080;
+  background-color: #f2f2f2;
+}
+
+/* AboutDialog */
+#aboutDialog #groove,
+#genericAbout #groove {
+  display: none;
+}
+
+#genericAbout .dialog-button-box {
+  margin: 0 0 -10px;
+}
+
+#updateButton {
+  padding-left: 2px !important;
+  list-style-image: url(chrome://global/skin/CuteMenus/UpdateAll.png);
+}
+
+#updateDeck .update-throbber {
+  list-style-image: url(chrome://global/skin/throbber/throbber.gif);
+}
+
+#bottomBox {
+  padding-top: 5px !important;
+  border-top: 2px groove #d4d0c8;
+  background: linear-gradient(#e8e8ec,#adaebb);
+}
+
+#bottomBox > #trademark {
+  color: #404040;
+}
+
+#aboutDialogContainer .text-link {
+  color: #1f9afd !important;
+}
+
+#aboutDialogContainer .text-link:hover {
+  color: #00f !important;
+}
+
+#aboutDialogContainer .text-link:hover:active {
+  color: #f00 !important;
+}
+
+/* Permissions dialogs */
+#CookiesDialog #cookiesList,
+#PermissionsDialog #permissionsTree {
+  margin: 2px 0 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+#CookiesDialog > hbox,
+#PermissionsDialog > hbox {
+  padding-top: 6px;
+  border-top: 2px groove #d4d0c8;
+  background: url(chrome://browser/skin/icons/Tool-background2.png) top left repeat-x #adaebb;
+}
+
+/* CRL viewer */
+#crlviewer > #crltree {
+  margin: 2px -10px 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+#crlviewer > #dialogButtons {
+  margin: -0.5em -10px -8px;
+  padding: 5px;
+  border-top: 2px groove #d4d0c8;
+  background: url(chrome://browser/skin/icons/Tool-background2.png) top left repeat-x #adaebb;
+}
+
+#winFind > .dialog-button-box, /* DOMi */
+#crlviewer > .dialog-button-box {
+  display: none;
+}
+
+/* ChatZilla */
+#findDialog > .dialog-button-box {
+  display: none;
+}
+
+/* rejected passwords dialog */
+#SignonViewerDialogPane #rejectsTree {
+  margin: 2px 0 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+#rejectedsites > hbox  {
+  margin: -0.5em 0 0;
+  padding: 5px;
+  border-top: 2px groove #d4d0c8;
+  background: url(chrome://browser/skin/icons/Tool-background2.png) top left repeat-x #adaebb;
+}
+
+/* Boolean Dialog in about:config */
+dialog #list {
+  margin: 2px -15px -13px;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+/* Manage Search Engines/Languges Dialog */
+#engineManager #up .button-box,
+#LanguagesDialog #up .button-box {
+  padding-left: 18px;
+  background: url(chrome://browser/skin/icons/arrow-up.png) left center no-repeat;
+}
+
+#engineManager #down .button-box,
+#LanguagesDialog #down .button-box {
+  padding-left: 18px;
+  background: url(chrome://browser/skin/icons/arrow-down.png) left center no-repeat;
+}
+
+#engineManager #remove {
+  list-style-image: none;
+}
+
+#engineManager #remove .button-box {
+  padding-left: 18px;
+  background: url(chrome://global/skin/CuteMenus/delete.png) left center no-repeat;
+}
+
+#engineManager #up[disabled=true] .button-box,
+#LanguagesDialog #up[disabled=true] .button-box,
+#engineManager #dn[disabled=true] .button-box,
+#LanguagesDialog #down[disabled=true] .button-box,
+#engineManager #remove[disabled=true] .button-box {
+  opacity: .7;
+}
+
+#LanguagesDialogPane separator + separator {
+  display: none;
+}
+
+/* Add-on List tree wider */
+#addonList #addonsTree > treecols {
+  max-width: 35em !important;
+}
+
+/* scratchpad */
+#scratchpad-textbox, /* <FF8 */
+#scratchpad-editor > textbox {
+  margin: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-bottom-width: 0;
+}
+#scratchpad-editor > iframe {
+  border-top: 1px solid #888;
+}
+
+#scratchpad-status > .statusbarpanel-icon {
+  display: none;
+}

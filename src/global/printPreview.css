@@ -1,0 +1,37 @@
+.home-arrow {
+  list-style-image: url(chrome://global/skin/icons/start.png);
+}
+
+.end-arrow {
+  list-style-image: url(chrome://global/skin/icons/finish.png);
+}
+
+.previous-arrow, .left-arrow {
+  list-style-image: url(chrome://global/skin/CuteMenus/back1.png);
+}
+
+.next-arrow, .right-arrow {
+  list-style-image: url(chrome://global/skin/CuteMenus/forward1.png);
+}
+
+#scale {
+  min-width: 165px;
+}
+
+.up-arrow {
+  list-style-image: url(chrome://global/skin/arrow/arrow-up-sharp.gif);
+}
+
+.down-arrow {
+  list-style-image: url(chrome://global/skin/arrow/arrow-dn-sharp.gif);
+}
+
+.toolbar-portrait-page {
+  margin-right: 3px;
+  list-style-image: url(chrome://global/skin/icons/Portrait-small.png);
+}
+
+.toolbar-landscape-page {
+  margin-right: 3px;
+  list-style-image: url(chrome://global/skin/icons/Landscape-small.png);
+}

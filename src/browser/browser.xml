@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE window [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd" >
+%browserDTD;
+]>
+
+<bindings id="globalBindings" xmlns="http://www.mozilla.org/xbl" xmlns:html="http://www.w3.org/1999/xhtml"
+  xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="autocomplete-security-wrapper" extends="xul:hbox">
+    <content>
+      <xul:hbox id="autocomplete-security-wrapper" flex="1">
+        <children/>
+      </xul:hbox>
+    </content>
+  </binding>
+
+  <binding id="restore-feed-button">
+    <content>
+      <xul:toolbarbutton 
+       id="urlbar-feed-button" 
+       style="-moz-user-focus: none;"
+       insertBefore="star-button"
+       class="toolbarbutton-1 chromeclass-toolbar-additional"
+       tooltiptext="&subscribeToPageMenuitem.label;"
+       onclick="return FeedHandler.onFeedButtonClick(event);" >
+        <xul:observes element="singleFeedMenuitemState" attribute="feed"/>
+        <xul:observes element="singleFeedMenuitemState" attribute="disabled"/>
+        <xul:observes element="subscribeToPageMenuitem" attribute="hidden"/>
+       </xul:toolbarbutton>
+
+       <xul:toolbarbutton 
+       id="urlbar-multi-feed-button" 
+       style="-moz-user-focus: none;"
+       insertBefore="star-button"
+       class="toolbarbutton-1 chromeclass-toolbar-additional"
+       tooltiptext="&subscribeToPageMenuitem.label;"
+       observes="multipleFeedsMenuitemState" >
+        <xul:observes element="subscribeToPageMenupopup" attribute="hidden"/>
+         <xul:menupopup id="subscribeToPageSubmenuMenupopup"
+         position="after_end"
+         onpopupshowing="return FeedHandler.buildFeedList(event.target);"
+         oncommand="return FeedHandler.subscribeToFeed(null, event);"
+         onclick="checkForMiddleClick(this, event);"/>
+       </xul:toolbarbutton>
+     <children/>
+    </content>
+  </binding>
+
+</bindings>

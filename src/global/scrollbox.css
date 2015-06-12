@@ -1,0 +1,47 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* Horizonal */
+.autorepeatbutton-up[orient=horizontal] {
+  list-style-image: url(chrome://global/skin/arrow/arrow-lft.gif);
+  -moz-image-region: auto;
+}
+
+.autorepeatbutton-down[orient=horizontal] {
+  list-style-image: url(chrome://global/skin/arrow/arrow-rit.gif);
+  -moz-image-region: auto;
+}
+
+/* Vertical */
+.autorepeatbutton-up {
+  list-style-image: url(chrome://global/skin/arrow/arrow-up.gif);
+  -moz-image-region: auto;
+}
+
+.autorepeatbutton-down {
+  list-style-image: url(chrome://global/skin/arrow/arrow-dn.gif);
+  -moz-image-region: auto;
+}
+
+.autorepeatbutton-up[disabled=true],
+.autorepeatbutton-down[disabled=true] {
+  opacity: .3;
+}
+
+autorepeatbutton {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  margin: 1px;
+  padding: 0 1px 1px 0;
+  border: 1px solid transparent;
+}
+
+autorepeatbutton:hover,
+autorepeatbutton:hover:active {
+  padding: 1px 0 0 1px;
+  border: 1px inset #eee;
+}
+
+.scrollbutton-up > .toolbarbutton-text,
+.scrollbutton-down > .toolbarbutton-text {
+  display: none;
+}

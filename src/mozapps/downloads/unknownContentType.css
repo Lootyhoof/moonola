@@ -1,0 +1,21 @@
+#from {
+  margin-top: 1px;
+}
+
+#location {
+  font-weight: bold;
+}
+
+#contentTypeImage {
+  height: 16px;
+  width: 16px;
+  margin: 0 0 5px 0;
+}
+
+.small-indent {
+  margin: 0 15px;
+}
+
+.small-indent label {
+  -moz-margin-start: 0;
+}

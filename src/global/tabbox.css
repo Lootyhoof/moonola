@@ -1,0 +1,58 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+tabpanels {
+  color: #000;
+  padding: 5px 8px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #404040;
+  border-bottom: 1px solid #404040;
+  border-left: 1px solid #fff;
+  background: url(chrome://browser/skin/icons/box-background.png) bottom repeat-x #cdced3;
+}
+
+tab {
+  color: #000;
+  min-height: 20px;
+  padding: 1px 5px 2px;
+  border: 1px solid #fff;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #cdced3;
+  border-radius: 5px 5px 0 0;
+  background: url(chrome://browser/skin/tabbrowser/tab-active-bkgnd.png) top repeat-x #c6c6c6;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+tab:hover {
+  color: #000;
+}
+
+tab[selected=true] {
+  color: #000;
+  border-bottom: 1px solid #fff;
+  background-color: #1d87c6;
+  text-shadow: none;
+}
+
+.tab-text {
+  text-align: left;
+  margin: 0 !important;
+}
+
+tabs[orient=vertical] tab,
+.tab-left {
+  border-bottom: 1px solid #808080;
+}
+
+.tab-bottom {
+  padding: 2px 5px 1px;
+  border-top: 1px solid #cdced3;
+  border-bottom: 1px solid #808080;
+  border-radius: 0 0 5px 5px;
+  background-image: url(chrome://browser/skin/tabbrowser/Tab-bottom-inactive.png);
+}
+
+.tab-bottom[selected=true] {
+  border-top: 1px solid #cdced3;
+  border-bottom: 1px solid #808080;
+  background-image: url(chrome://browser/skin/tabbrowser/Tab-bottom-active.png);
+}

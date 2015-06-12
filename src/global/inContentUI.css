@@ -1,0 +1,19 @@
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+*|*:root {
+  font: message-box;
+  height: 100%;
+  background: url(chrome://browser/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
+}
+
+html|html {
+  font: message-box;
+}
+
+*|*.main-content {
+  color: #000;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px #404040;
+}

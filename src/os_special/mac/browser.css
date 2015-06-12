@@ -1,0 +1,39 @@
+@import url(chrome://browser/skin/browser-nonLinux.css);
+
+#navigator-toolbox[tabsontop=true] > #nav-bar {
+  border-top: 1px solid #fff;
+}
+
+#navigator-toolbox[tabsontop=true] > #nav-bar:-moz-lwtheme {
+  border-top: 1px solid rgba(255,255,255,.2);
+}
+
+.tabbrowser-strip > .tabbrowser-tabs {
+  background: #a8a8a8;
+}
+
+window:not([active=true]) .tabbrowser-strip > .tabbrowser-tabs {
+  background: #d8d8d8;
+}
+
+#minimize-button,#close-button,
+#fullscreen-button ~ #window-controls > #restore-button {
+  display: none !important;
+}
+
+#fullscr-toggler {
+  min-height: 2px !important;
+  height: 2px !important;
+}
+
+#titlebar-buttonbox-container,
+#main-window:not([drawintitlebar=true]) > #titlebar {
+  display: none;
+}
+
+#titlebar {
+  min-height: 22px;
+  height: 22px !important;
+  margin-top: 0 !important;
+  border-top: 0 !important;
+}

@@ -1,0 +1,70 @@
+#app-picker {
+  width: 320px !important;
+  max-width: 320px !important;
+}
+
+#content-description {
+  font-weight: bold;
+}
+
+#suggested-filename {
+  font-weight: normal;
+}
+
+#content-icon,
+.listcell-icon {
+  height: 32px;
+  width: 32px;
+  margin: 5px;
+}
+
+.listcell-label {
+  padding: 5px;
+}
+
+#app-picker-list {
+  height: 225px;
+  min-height: 225px;
+  margin: 2px -10px 2px;
+  border-right: 0;
+  border-left: 0;
+}
+
+#app-picker-item {
+  padding: 5px;
+}
+
+#app-picker-item-cell {
+  font-weight: normal;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#app-picker-listbox {
+  margin: 2px -10px -8px;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+#app-picker-listbox listitem:not(:last-child) {
+  border-bottom: 1px dotted #c0c0c0;
+}
+
+#app-picker-listbox listitem[selected=true] {
+  color: #0041aa;
+  background: url(chrome://mozapps/skin/downloads/downloadSelected.png) center;
+  background-size: auto 100%;
+}
+
+listbox:focus > listitem[selected=true] {
+  border: 1px solid transparent;
+}
+
+#browse-button {
+  margin-top: 10px;
+}
+
+#app-picker-notfound {
+  margin: 8px 0 0;
+}

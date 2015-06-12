@@ -1,0 +1,54 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+dialog {
+  padding: 8px 10px;
+  background: url(chrome://global/skin/icons/dialog-background.png) repeat-y #dadce4;
+}
+
+dialogheader {
+  color: #000;
+  margin: 2px 5px 5px;
+  padding: 5px 8px;
+  border: 1px inset #fff;
+  border-radius: 5px;
+  background: url(chrome://global/skin/icons/NotificationGradient.png) top repeat-x #2a8dfd;
+}
+
+.dialogheader-title {
+  margin: 0 !important;
+  letter-spacing: 10px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.header-large {
+  -moz-box-orient: vertical;
+  color: #000;
+  margin: -8px -10px 0;
+  padding: 12px 5px 12px 25px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  -moz-border-bottom-colors: #fff #808080;
+  background-color: #dadce4;
+}
+
+.header-large > .dialogheader-title {
+  font: inherit;
+  font-weight: bold;
+}
+
+.header-large > .dialogheader-description {
+  margin-left: 12px !important;
+}
+
+.dialog-button-box {
+  margin: 8px -10px -8px;
+  padding: 0 5px;
+  border-top: 2px groove #d4d0c8;
+  background: url(chrome://browser/skin/icons/Tool-background2.png) top left repeat-x #adaebb;
+}
+
+.dialog-button {
+  margin: 6px 3px;
+}

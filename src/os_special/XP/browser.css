@@ -1,0 +1,45 @@
+@import url(chrome://browser/skin/browser-nonLinux.css);
+#main-window:not([sizemode=maximized]) > #titlebar {
+  -moz-border-top-colors: #fff #404040;
+}
+
+#main-window[tabsintitlebar] #titlebar {
+  margin-top: 2px;
+}
+
+#main-window[tabsintitlebar] #titlebar > #titlebar-content > #appmenu-button-container,
+#main-window[tabsintitlebar][sizemode=maximized] #titlebar > #titlebar-content > #appmenu-button-container {
+  margin-top: 1px;
+}
+
+#main-window[chromemargin^="0"] #appmenu-button-container {
+  margin-top: -1px;
+}
+ 
+#main-window[tabsintitlebar] #titlebar-buttonbox {
+  margin-top: 2px;
+}
+
+#main-window[chromemargin^="0"] #window-frame-top-right,
+#main-window[chromemargin^="0"] #window-frame-top-left {
+  width: 3px;
+  height: 3px;
+}
+
+#main-window[chromemargin^="0"] #window-frame-right,
+#main-window[chromemargin^="0"] #window-frame-left {
+  width: 3px;
+}
+
+#main-window[chromemargin^="0"] #window-frame-bottom {
+  height: 3px;
+}
+
+#main-window[sizemode=normal] #navigator-toolbox[tabsontop=true] > #toolbar-menubar[autohide=true] ~ #TabsToolbar:not([inFullscreen]) {
+  margin-top: -21px;
+}
+
+#navigator-toolbox:not([inFullscreen])[tabsontop=true] > #toolbar-menubar[autohide=true] ~ #TabsToolbar {
+  margin-right: 66px;
+  margin-left: 49px;
+}

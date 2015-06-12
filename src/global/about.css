@@ -1,0 +1,105 @@
+html {
+  font: message-box;
+  padding: 0 1em;
+  background: url(chrome://browser/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
+}
+
+body {
+  position: relative;
+  min-width: 330px;
+  max-width: 50em;
+  margin: 4em auto;
+  padding: 3em;
+  padding-left: 30px;
+  color: #000;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px #404040;
+}
+
+.aboutPageWideContainer {
+  max-width: 80%;
+}
+
+#aboutLogoContainer {
+  width: 300px;
+  margin-bottom: 2em;
+  border: 1px solid #d4d0c8;
+}
+
+h1 {
+  text-shadow: #a0a0a0 1px 1px 0;
+}
+
+img {
+  border: 0;
+}
+
+#version {
+  font-weight: bold;
+  color: #909090;
+  margin: -24px 0 9px 17px;
+}
+
+ul {
+  margin: 0;
+  margin-left: 1.5em;
+  padding: 0;
+  list-style: square;
+}
+
+ul > li {
+  margin-top: .5em;
+}
+
+th, td {
+  padding: 0 5px;
+}
+
+.columns {
+  -moz-column-width: 20em;
+  -moz-column-gap: 3em;
+}
+
+.option a {
+  color: #1f9afd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.option a:hover {
+  color: #00f;
+}
+
+.option a:hover:active {
+  color: #f00;
+}
+
+button {
+  -moz-box-pack:center;
+  -moz-box-align:center;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  color: #000;
+  padding: 2px;
+  border: 2px solid;
+  -moz-border-top-colors: #808080 #fff;
+  -moz-border-right-colors: #808080 #808080;
+  -moz-border-bottom-colors: #808080 #808080;
+  -moz-border-left-colors: #808080 #fff;
+  border-radius: 5px;
+  background: url(chrome://global/skin/button/body.png) repeat-x top left #fafafb;
+}
+
+button:hover {
+  background: url(chrome://global/skin/button/body-hover.png) repeat-x top left #b8e9fe;
+}
+
+button:hover:active {
+  -moz-border-top-colors: #ccc #444;
+  -moz-border-right-colors: #ccc #444;
+  -moz-border-bottom-colors: #ccc #444;
+  -moz-border-left-colors: #ccc #444;
+  background: url(chrome://global/skin/button/body-active.png) repeat-x top left #c5ebf9;
+}

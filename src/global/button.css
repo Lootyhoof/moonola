@@ -1,0 +1,145 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+button {
+  -moz-box-pack:center;
+  -moz-box-align:center;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  color: #000;
+  margin: 1px 3px;
+  padding: 2px 3px 2px 1px;
+  border: 2px solid;
+  -moz-border-top-colors: transparent #444;
+  -moz-border-right-colors: #999 #444;
+  -moz-border-bottom-colors: #999 #444;
+  -moz-border-left-colors: transparent #444;
+  border-radius: 5px;
+  background: url(chrome://global/skin/button/body.png) repeat-x top left #fafafb;
+  background-clip: padding-box;
+}
+
+button:focus {
+  background: url(chrome://global/skin/button/body-focus.png) repeat-x top left #c6feff;
+  background-clip: padding-box;
+}
+
+button[default=true] {
+  -moz-border-top-colors: #02a1fe #444;
+  -moz-border-right-colors: #02a1fe #444;
+  -moz-border-bottom-colors: #02a1fe #444;
+  -moz-border-left-colors: #02a1fe #444;
+  background: url(chrome://global/skin/button/body-active.png) repeat-x top left #c5ebf9;
+}
+
+button:hover {
+  background: url(chrome://global/skin/button/body-hover.png) repeat-x top left #b8e9fe;
+  background-clip: padding-box;
+}
+
+button[checked=true],
+button:hover:active {
+  -moz-border-top-colors: #ccc #444;
+  -moz-border-right-colors: #ccc #444;
+  -moz-border-bottom-colors: #ccc #444;
+  -moz-border-left-colors: #ccc #444;
+  background: url(chrome://global/skin/button/body-active.png) repeat-x top left #c5ebf9;
+}
+
+button[disabled=true] {
+  color: #d4d0c8;
+  -moz-border-top-colors: transparent #666 !important;
+  -moz-border-right-colors: transparent #666 !important;
+  -moz-border-bottom-colors: transparent #666 !important;
+  -moz-border-left-colors: transparent #666 !important;
+  background: url(chrome://global/skin/button/body-disabled.png) repeat-x top left #fafafb !important;
+  background-clip: padding-box;
+}
+
+.button-icon {
+  margin-right: 2px;
+}
+
+button[disabled=true] .button-icon {
+  opacity: .3;
+}
+
+.button-text {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.button-menu-dropmarker,
+.button-menubutton-dropmarker {
+  min-width: 11px;
+  min-height: 11px;
+  margin: 1px;
+  list-style-image: none;
+  background-image: url(chrome://global/skin/arrow/arrow-dn.gif);
+}
+
+.button-menu-dropmarker[disabled=true],
+.button-menubutton-dropmarker[disabled=true] {
+  background-image: url(chrome://global/skin/arrow/arrow-dn-dis.gif);
+}
+
+.button-menubutton-dropmarker[open=true] {
+  margin: 2px 0 0 2px;
+}
+
+/* plain buttons */
+
+button.plain {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+button[type=disclosure] {
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-image: url(chrome://global/skin/tree/twisty.png);
+  border: 0 !important;
+  background: none !important;
+  background-color: transparent;
+}
+
+button[type=disclosure][open=true] {
+  list-style-image: url(chrome://global/skin/tree/twisty-open.png);
+}
+
+#ok,#closeButton,button[dlgtype=accept] {
+  list-style-image: url(chrome://global/skin/CuteMenus/accept.png);
+}
+
+#cancel, button[dlgtype=cancel],
+button[oncommand="close();"] {
+  list-style-image:url(chrome://global/skin/CuteMenus/stop.png);
+}
+
+#help,#HelpButton, button[dlgtype=help] {
+  list-style-image: url(chrome://global/skin/CuteMenus/help.png);
+}
+
+button[dlgtype=disclosure] {
+  list-style-image:url(chrome://global/skin/CuteMenus/edit_add.png);
+}
+
+button[dlgtype^=extra] {
+  list-style-image: url(chrome://global/skin/CuteMenus/minimize.png);
+}
+
+button[icon=save] {
+  list-style-image: url(chrome://global/skin/CuteMenus/save.png);
+}
+
+button[type=menu-button] {
+  margin-left: 0;
+  padding: 0 3px 0 0;
+}
+
+button[type=menu-button] > button {
+  margin: -2px 3px -2px -2px;
+  border-right: 1px solid;
+  border-radius: 5px 0 0 5px;
+}

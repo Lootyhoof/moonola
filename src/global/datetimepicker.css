@@ -1,0 +1,125 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+@namespace html url(http://www.w3.org/1999/xhtml);
+
+datepicker, timepicker {
+  cursor: default;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.datetimepicker-input-box {
+  cursor: text;
+  color: #000;
+  padding: 1px 2px;
+  border: 1px solid #808080;
+  background-color: #f2f2f2;
+}
+
+.datetimepicker-input-subbox {
+  width: 1.6em;
+}
+
+html|*.datetimepicker-input {
+  text-align: right;
+}
+
+.datetimepicker-separator {
+  margin: 0 !important;
+}
+
+.datetimepicker-year {
+  width: 3.2em;
+}
+
+.datepicker-mainbox {
+  color: #000;
+  margin: 2px 4px;
+  border: 1px solid #808080;
+  background-color: #f2f2f2;
+}
+
+datepicker[readonly=true] .datepicker-mainbox,
+datepicker[readonly=true] .datetimepicker-input-box,
+timepicker[readonly=true] {
+  color: #888;
+}
+
+datepicker[disabled=true] .datepicker-mainbox,
+datepicker[disabled=true] .datetimepicker-input-box,
+timepicker[disabled=true] {
+  cursor: default;
+  color: #ccc;
+}
+
+.datepicker-popupgrid > .datepicker-mainbox {
+  margin: 0;
+  border: 0;
+}
+
+.datepicker-gridlabel, .datepicker-weeklabel {
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.datepicker-gridlabel[today=true] {
+  color: #00f;
+  border-color: #00f !important;
+}
+
+.datepicker-gridlabel[selected=true] {
+  color: #fff;
+  border-color: transparent;
+  background-color: #1f9afd;
+}
+
+.datepicker-gridlabel:hover {
+  border-color: #1f9afd;
+}
+
+.datepicker-button {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: url(chrome://global/skin/checkbox/checkbox.png) center transparent;
+}
+
+.datepicker-button:hover {
+  background: url(chrome://global/skin/checkbox/checkbox-focus.png) center transparent;
+}
+
+.datepicker-button:hover:active {
+  background: url(chrome://global/skin/checkbox/checkbox-active.png) center transparent;
+}
+
+.datepicker-button[disabled=true] {
+  opacity: .4;
+}
+
+.datepicker-previous > .button-box {
+  height: 11px;
+  background: url(chrome://global/skin/arrow/arrow-lft.gif) center no-repeat;
+}
+
+.datepicker-previous:hover > .button-box {
+  background-image: url(chrome://global/skin/arrow/arrow-lft-hov.gif);
+}
+
+.datepicker-previous[disabled=true] > .button-box {
+  background-image: url(chrome://global/skin/arrow/arrow-lft-dis.gif);
+}
+
+.datepicker-next > .button-box {
+  height: 11px;
+  background: url(chrome://global/skin/arrow/arrow-rit.gif) center no-repeat;
+}
+
+.datepicker-next:hover > .button-box {
+  background-image: url(chrome://global/skin/arrow/arrow-rit-hov.gif);
+}
+
+.datepicker-next[disabled=true] > .button-box {
+  background-image: url(chrome://global/skin/arrow/arrow-rit-dis.gif);
+}

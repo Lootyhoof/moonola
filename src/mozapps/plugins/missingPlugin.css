@@ -1,0 +1,66 @@
+@namespace html url(http://www.w3.org/1999/xhtml);
+
+html|object:not([width]), html|object[width=""],
+html|embed:not([width]), html|embed[width=""],
+html|applet:not([width]), html|applet[width=""] {
+  width: 240px;
+}
+
+html|object:not([height]), html|object[height=""],
+html|embed:not([height]), html|embed[height=""],
+html|applet:not([height]), html|applet[height=""] {
+  height: 200px;
+}
+
+html|object > *|*,
+html|embed > *|*,
+html|applet > *|* {
+  width: inherit;
+  height: inherit;
+}
+
+html|a, html|div {
+  display: inline-block;
+  /* overflow:hidden makes baseline vertical-alignment act like plugins */
+  overflow: hidden;
+  vertical-align: inherit;
+  font-size: 12px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  border-radius: 12px;
+  background: rgba(230,230,230,.9);
+}
+
+vbox {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  width: inherit;
+  height: inherit;
+}
+
+description {
+  margin-top: 8px;
+}
+
+#missingPluginPlaceholder {
+  list-style-image: url(chrome://mozapps/skin/plugins/pluginGeneric.png);
+}
+
+#disabledPluginPlaceholder {
+  list-style-image: url(chrome://mozapps/skin/plugins/pluginDisabled.png);
+}
+
+#blockedPluginPlaceholder {
+  list-style-image: url(chrome://mozapps/skin/plugins/pluginBlocked.png);
+}
+
+#missingPluginPlaceholder,
+#disabledPluginPlaceholder,
+#missingPluginPlaceholder {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 0;
+}

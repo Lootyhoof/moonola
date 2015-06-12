@@ -1,0 +1,132 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+@namespace html url(http://www.w3.org/1999/xhtml);
+
+textbox {
+  color: #000;
+  cursor: text;
+  margin: 2px 3px;
+  padding: 1px 2px;
+  border: 1px solid #888;
+  border-right-color: #ccc;
+  border-bottom-color: #ccc;
+  background-color: #f2f2f2;
+}
+
+textbox[multiline=true] {
+  padding: 0 0 0 2px;
+}
+
+textbox[empty=true],
+textbox[isempty=true] {
+  color: #808080;
+}
+
+html|*.textbox-input,
+html|*.textbox-textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background-color: inherit;
+}
+
+html|*.textbox-input:-moz-placeholder,
+html|*.textbox-textarea:-moz-placeholder {
+  color: #aaa;
+}
+
+html|*.textbox-input::-moz-placeholder,
+html|*.textbox-textarea::-moz-placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+textbox[focused] html|*.textbox-input:-moz-placeholder {
+  color: transparent;
+}
+
+textbox[focused] html|*.textbox-input::-moz-placeholder {
+  color: transparent;
+}
+
+/* readonly */
+textbox[readonly=true] {
+  border: 1px solid #aaa;
+}
+
+textbox[readonly=true][disabled=true] {
+  opacity: .5 !important;
+}
+
+groupbox textbox[readonly=true] {
+  background: #e6e7f4;
+  border: 0;
+}
+
+/* disabled */
+textbox[disabled=true] {
+  cursor: default;
+  color: #808080;
+  background-color: #dadce4;
+  opacity: .5 !important;
+}
+
+/* plain textbox */
+textbox.plain {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background-color: transparent;
+}
+
+/* search textbox */
+textbox[type=search] {
+  margin: 2px 4px;
+  padding-left: 6px;
+  border: 1px solid #fff;
+  border-top-color: #808080;
+  border-right-color: #d0d0d0;
+  border-left-color: #a0a0a0;
+  border-radius: 11px;
+  background-color: #f2f2f2;
+}
+
+textbox[type=search] .textbox-input-box {
+  min-width: 150px;
+}
+
+.textbox-search-icon {
+  width: 16px;
+  height: 16px;
+  list-style-image: url(chrome://browser/skin/icons/Searchbar.png);
+  -moz-image-region: rect(0 16px 16px 0);
+}
+
+.textbox-search-clear {
+  width: 16px;
+  height: 16px;
+  margin: 1px 0 -1px;
+  list-style-image: url(chrome://global/skin/icons/close.png);
+  -moz-image-region: rect(0 16px 16px 0);
+}
+
+.textbox-search-clear:not([disabled]),
+.textbox-search-icon[searchbutton]:not([disabled]) {
+  cursor: default;
+}
+
+.textbox-search-clear:not([disabled]):hover ,
+.textbox-search-icon[searchbutton]:not([disabled]):hover {
+  -moz-image-region: rect(0 32px 16px 16px);
+}
+
+.textbox-search-clear:not([disabled]):hover:active ,
+.textbox-search-icon[searchbutton]:not([disabled]):hover:active {
+  -moz-image-region: rect(0 48px 16px 32px);
+}
+
+/* textboxes inside toolbarpaletteitems */
+toolbarpaletteitem > toolbaritem > textbox > .textbox-input-box > html|*.textbox-input {
+  visibility: hidden;
+}

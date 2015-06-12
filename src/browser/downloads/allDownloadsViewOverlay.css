@@ -1,0 +1,6 @@
+@import url(chrome://browser/skin/downloads/downloads.css);
+
+#downloadsRichListBox {
+  margin: 0;
+  border: 0;
+}

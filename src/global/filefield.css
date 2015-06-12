@@ -1,0 +1,31 @@
+/* File Field Widget */
+filefield {
+  margin: 2px 4px;
+}
+
+.fileFieldContentBox {
+  color: #000;
+  border: 1px solid #808080;
+  background-color: #eaebed;
+}
+
+filefield[disabled=true] .fileFieldContentBox {
+  opacity: .5;
+}
+
+filefield[disabled=true] .fileFieldIcon {
+  opacity: .2;
+}
+
+.fileFieldIcon {
+  width: 16px;
+  height: 16px;
+  margin: 2px 4px 2px 2px;
+}
+
+.fileFieldLabel {
+  margin: 0;
+  padding: 1px 0 0;
+  border: 0;
+  background-color: transparent;
+}

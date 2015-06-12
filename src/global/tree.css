@@ -1,0 +1,265 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+tree {
+  color: #000;
+  margin: 2px;
+  border-top: 1px solid #808080;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #808080;
+  background-color: #f2f2f2;
+}
+
+/* tree rows */
+treechildren::-moz-tree-row {
+  min-height: 18px;
+  height: 1.3em;
+  border: 1px solid transparent;
+}
+
+treechildren::-moz-tree-row(current, focus) {
+  border: 1px solid #1f9afd;
+}
+
+treechildren::-moz-tree-row(selected) {
+  background: url(chrome://browser/skin/icons/Bookmark-background1.png) repeat-x center !important;
+}
+
+treechildren::-moz-tree-row(selected, focus) {
+  border: 1px solid #00f;
+  background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center !important;
+}
+
+/* tree cells */
+treechildren::-moz-tree-cell {
+  padding: 0 2px;
+}
+
+treechildren::-moz-tree-cell-text {
+  color: inherit;
+  padding-left: 2px;
+}
+
+treechildren::-moz-tree-cell-text(hover) {
+  color: #1f9afd;
+}
+
+treechildren::-moz-tree-cell-text(selected) {
+  color: #000;
+}
+
+tree[seltype=cell] > treechildren::-moz-tree-cell {
+  padding: 0 1px;
+  border: 1px solid transparent;
+}
+
+tree[seltype=text] > treechildren::-moz-tree-cell-text {
+  padding: 0 1px 1px 1px;
+  border: 1px solid transparent;
+}
+
+tree[seltype=cell] > treechildren::-moz-tree-cell(active, selected) {
+  background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center;
+}
+
+tree[seltype=cell] > treechildren::-moz-tree-cell-text(active, selected) {
+  color: #fff;
+}
+
+tree[seltype=text] > treechildren::-moz-tree-cell-text(active, selected) {
+  color: #fff;
+  background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center;
+}
+
+treechildren::-moz-tree-cell-text(selected, focus) {
+  color: #fff;
+}
+
+tree[seltype=cell] > treechildren::-moz-tree-cell(active, selected, focus),
+tree[seltype=text] > treechildren::-moz-tree-cell-text(active, selected, focus) {
+  background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center;
+}
+
+treechildren::-moz-tree-cell-text(active, selected, focus) {
+  color: #fff;
+}
+
+tree[seltype=cell] > treechildren::-moz-tree-cell(active, current, focus),
+tree[seltype=text] > treechildren::-moz-tree-cell-text(active, current, focus) {
+  border: 1px dotted #000;
+}
+
+tree[seltype=cell] > treechildren::-moz-tree-cell(active, selected, current, focus),
+tree[seltype=text] > treechildren::-moz-tree-cell-text(active, selected, current, focus) {
+  border: 1px dotted #c0c0c0;
+}
+
+/* lines connecting cells */
+treechildren::-moz-tree-line {
+  visibility: visible;
+  border: 1px dotted #808080;
+}
+
+tree[seltype=cell] > treechildren::-moz-tree-line(active, selected, focus),
+treechildren::-moz-tree-line(selected, focus) {
+  border: 1px dotted #fff;
+}
+
+/* tree separator */
+treechildren::-moz-tree-separator {
+  height: 1px;
+  background-color: #808080;
+}
+
+/* drop feedback */
+treechildren::-moz-tree-row(dropOn) {
+  background-color: #8acbfc;
+}
+
+treechildren::-moz-tree-cell-text(primary, dropOn) {
+  color: #fff;
+}
+
+treechildren::-moz-tree-drop-feedback {
+  width: 50px;
+  height: 2px;
+  margin-left: 5px;
+  background-color: #808080;
+}
+
+/* tree progress meter */
+treechildren::-moz-tree-progressmeter {
+  color: #1f9afd;
+  margin: 2px 4px;
+  border: 2px solid;
+  -moz-border-top-colors: #808080 #dadce4;
+  -moz-border-right-colors: #fff #dadce4;
+  -moz-border-bottom-colors: #fff #dadce4;
+  -moz-border-left-colors: #808080 #dadce4;
+  background: url(chrome://global/skin/progressmeter/background.png) repeat-x left center;
+}
+
+treechildren::-moz-tree-progressmeter(progressUndetermined) {
+  list-style-image: url(chrome://global/skin/progressmeter/busy.gif);
+}
+
+treechildren::-moz-tree-cell-text(progressmeter) {
+  margin: 2px 4px;
+}
+
+/* tree columns */
+treecol,
+treecolpicker {
+  -moz-box-align: center;
+  color: #000;
+  padding: 0 4px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  border-left: 1px solid #fff;
+  background: url(chrome://global/skin/tree/header.png) repeat-x #afb2bf;
+}
+
+treecol:hover,
+treecolpicker:hover {
+  background: url(chrome://global/skin/tree/header-active.png) repeat-x #fdfdfd;
+}
+
+treecol:hover:active,
+treecolpicker:hover:active {
+  border-top-color: #808080;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  border-left-color: #808080;
+}
+
+treecol[hideheader] {
+  border: 0;
+}
+
+.treecol-image {
+  padding: 0 2px;
+}
+
+.treecol-image:hover:active {
+  padding: 0 1px 0 3px;
+}
+
+.treecol-text {
+  margin: 0 !important;
+}
+
+treecol:active .treecol-text {
+  color: #00f;
+}
+
+/* column drag and drop styles */
+treecol[dragging] {
+  border: 1px solid #1f9afd !important;
+}
+
+treecol[insertbefore],
+treechildren::-moz-tree-column(insertbefore) {
+  border-left: 1px solid #1f9afd;
+}
+
+treecol[insertafter],
+treechildren::-moz-tree-column(insertafter) {
+  border-right: 1px solid #1f9afd;
+}
+
+/* sort direction indicator */
+.treecol-sortdirection {
+  list-style-image: none;
+}
+
+.treecol-sortdirection[sortDirection=ascending] {
+  list-style-image: url(chrome://global/skin/tree/sort-asc.gif);
+}
+
+.treecol-sortdirection[sortDirection=descending] {
+  list-style-image: url(chrome://global/skin/tree/sort-dsc.gif);
+}
+
+/* column picker */
+.tree-columnpicker-icon {
+  padding: 2px 0 3px;
+  list-style-image: url(chrome://global/skin/tree/columnpicker.png);
+}
+
+/* twisty */
+treechildren::-moz-tree-twisty {
+  padding-top: 1px;
+  padding-right: 2px;
+  list-style-image: url(chrome://global/skin/tree/twisty.png);
+}
+
+treechildren::-moz-tree-twisty(open) {
+  list-style-image: url(chrome://global/skin/tree/twisty-open.png);
+}
+
+treechildren::-moz-tree-indentation {
+  width: 14px;
+}
+
+/* gridline style */
+treechildren.gridlines::-moz-tree-cell {
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+
+treechildren.gridlines::-moz-tree-row {
+  border: 0;
+}
+
+/* editable tree */
+treechildren::-moz-tree-cell-text(selected, editing) {
+  color: inherit;
+}
+
+.tree-input {
+  margin: 0  -2px 1px;
+  padding: 0 1px;
+  border: 1px solid #808080;
+  background: rgba(255,255,255,.7)
+}

@@ -1,0 +1,72 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+notification {
+  color: #000;
+  min-height: 28px !important;
+  text-shadow: none;
+  background: #ff8 url(chrome://global/skin/icons/NotificationGradient.png) top repeat-x;
+}
+
+notification[type=info] {
+  background-color: #cadce4;
+}
+
+notification[type=critical] {
+  color: #fff;
+  background-color: #f00;
+}
+
+.notification-inner {
+  border: 0 !important;
+  border-top: 1px solid #808080 !important;
+}
+
+.messageImage {
+  width: 16px;
+  height: 16px;
+  margin: 0 1px 0 5px;
+}
+
+notification[type=info] .messageImage {
+  list-style-image: url(chrome://global/skin/CuteMenus/info.png);
+}
+
+notification[type=warning] .messageImage {
+  list-style-image: url(chrome://global/skin/icons/warning-16.png);
+}
+
+notification[type=critical] .messageImage {
+  list-style-image: url(chrome://global/skin/CuteMenus/stop.png);
+}
+
+notification[value=password-save] .messageImage {
+  background-image: url(chrome://browser/skin/icons/lock-secure.png);
+}
+
+.popup-notification-description {
+  max-width: 30em;
+}
+
+.popup-notification-menubutton > menupopup menuitem {
+  -moz-binding: url(chrome://global/content/bindings/menu.xml#menuitem-iconic);
+  min-width: 110px;
+}
+
+.messageCloseButton {
+  padding: 4px 2px;
+  list-style-image: url(chrome://global/skin/icons/close.png);
+  -moz-image-region: rect(0 64px 16px 48px);
+  border: 0 !important;
+}
+
+.messageCloseButton:hover {
+  -moz-image-region: rect(0 32px 16px 16px);
+}
+
+.messageCloseButton:hover:active {
+  -moz-image-region: rect(0 48px 16px 32px);
+}
+
+.popup-notification-closebutton {
+  margin: -8px -8px 0 0;
+}

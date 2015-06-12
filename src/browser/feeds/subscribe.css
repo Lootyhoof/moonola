@@ -1,0 +1,179 @@
+*[hidden] {
+  display: none;
+}
+
+html {
+  height: 100%;
+  font: 3mm tahoma,arial,helvetica,sans-serif;
+  background: url(chrome://browser/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
+}
+
+body {
+  color: #000;
+  font: message-box;
+  margin: 0;
+  padding: 0 3em;
+}
+
+h1 {
+  font-size: 160%;
+  margin: 0 0 .2em 0;
+  border-bottom: 2px solid #d4d0c8;
+}
+
+h2 {
+  color: #404040;
+  font-size: 110%;
+  font-weight: normal;
+  margin: 0 0 .6em 0;
+}
+
+a[href] img {
+  border: 0;
+}
+
+#feedHeaderContainer {
+  margin: .5em auto 0 auto;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  background-color: #e2e2e2;
+}
+
+#feedHeader {
+  color: #000;
+  font-size: 110%;
+  margin: 1em 1em 1em 1.4em;
+  padding-left: 2.9em;
+}
+
+#handlersMenuList {
+  padding: 1px 3px;
+}
+
+#handlersMenuList .menulist-icon {
+  margin: 3px 0 0;
+}
+
+#handlersMenuList .menulist-dropmarker {
+  margin: 2px 0 0;
+}
+
+.feedBackground {
+  background: url(chrome://browser/skin/feeds/feedIcon.png) 0% 10% no-repeat #e2e2e2;
+}
+
+.videoPodcastBackground {
+  background: url(chrome://browser/skin/feeds/videoFeedIcon.png) 0% 10% no-repeat #e2e2e2;
+}
+
+.audioPodcastBackground {
+  background: url(chrome://browser/skin/feeds/audioFeedIcon.png) 0% 10% no-repeat #e2e2e2;
+}
+
+#feedIntroText {
+  display: none;
+}
+
+#feedHeader[firstrun=true] #feedIntroText {
+  display: block;
+  padding-top: 0.1em;
+  padding-left: 0.6em;
+}
+
+#feedHeader[firstrun=true] > #feedSubscribeLine {
+  padding-left: 1.8em;
+}
+
+#feedSubscribeLine {
+  padding-top: 0.2em;
+}
+
+#alwaysUse {
+  padding: 5px;
+}
+
+.handlersMenuPopup,
+#handlersMenuList > menupopup {
+  background: #dadce4 url(chrome://global/skin/menu/menuback.png) repeat-y;
+}
+
+.handlersMenuPopup > menuitem,
+#handlersMenuList > menupopup > menuitem {
+  padding: 1px 0 1px 9px;
+}
+
+.handlersMenuPopup > menuitem > .menu-iconic-left,
+#handlersMenuList > menupopup > menuitem > .menu-iconic-left {
+  display: -moz-box;
+  min-width: 16px;
+  padding-left: 2px;
+}
+
+#feedBody, #feedError {
+  margin: 2em auto;
+  padding: 3em;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  padding-left: 30px;
+  background: #f2f2f2;
+}
+
+#feedTitleLink {
+  float: right;
+  margin: 0 0 0 .6em;
+}
+
+#feedTitleContainer {
+  margin: 0 .6em 0 0;
+}
+
+#feedTitleImage {
+  max-width: 300px;
+  max-height: 150px;
+  margin: 0 0 0 .6em;
+}
+
+.feedEntryContent {
+  font-size: 110%;
+}
+
+.link {
+  cursor: pointer;
+  color: #1f9afd;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #00f;
+}
+
+.lastUpdated {
+  font-size: 85%;
+  font-weight: normal;
+}
+
+.type-icon {
+  vertical-align: bottom;
+  height: 16px;
+  width: 16px;
+}
+
+.enclosures {
+  margin: 1em auto;
+  padding: 1em;
+  border: 1px solid #404040;
+  border-radius: 5px;
+  background: #dadce4;
+}
+
+.enclosure {
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+/* Don't print subscription UI */
+@media print {
+  #feedHeaderContainer {
+    display: none;
+  }
+}

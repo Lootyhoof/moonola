@@ -1,0 +1,122 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+.console-box {
+  color: #000;
+  background-color: #dadce4;
+}
+
+/* console rows */
+
+.console-row {
+  padding: 0;
+  border-bottom: 2px solid #000;
+}
+
+.console-row-icon {
+  padding: 5px;
+  border-right: 1px solid #808080;
+  -moz-box-align: start !important;
+}
+
+.console-icon {
+  list-style-image: inherit;
+}
+
+/* error rows */
+
+.console-row-code {
+  color: #00b;
+  font-size: larger;
+  padding: 3px 0 3px 3px;
+}
+
+.console-dots,
+.console-caret {
+  height: 9px;
+}
+
+.console-dots {
+  background: url(chrome://global/skin/console/error-dash.gif) repeat-x top;
+}
+
+.console-caret {
+  width: 7px;
+  background: url(chrome://global/skin/console/error-caret.gif) no-repeat top;
+}
+
+/* message rows */
+
+.console-row[type=message] {
+  font-family: monospace;
+}
+
+/* selected state */
+
+.console-row[selected=true] {
+  background-color: #b7dbeb !important;
+}
+
+.console-row-code[selected=true],
+.console-row-content[selected=true] > .console-row-file > .console-error-source > .text-link {
+  color: inherit !important;
+}
+
+/* icons */
+
+.console-row,
+toolbar#ToolbarMode toolbarbutton {
+  padding: 2px;
+}
+
+#console-toolbox > #ToolbarMode toolbarbutton .toolbarbutton-icon {
+  height: 32px;
+  width: 32px;
+}
+
+#console-toolbox > #ToolbarMode toolbarbutton:hover > .toolbarbutton-icon {
+  height: 28px;
+  width: 28px;
+  margin: 2px 4px 2px 2px;
+}
+
+#Console\:modeAll {
+  list-style-image: url(chrome://browser/skin/icons/Chat.png);
+}
+
+.console-row[type=error],
+.console-row[type=exception],
+#Console\:modeErrors {
+  list-style-image: url(chrome://browser/skin/icons/alert-error.png);
+}
+
+.console-row[type=warning],
+#Console\:modeWarnings {
+  list-style-image: url(chrome://browser/skin/icons/alert-warning.png);
+}
+
+.console-row[type=message],
+#Console\:modeMessages {
+  list-style-image: url(chrome://browser/skin/icons/alert-message.png);
+}
+
+.console-row[type=all] {
+  list-style-image: url(chrome://browser/skin/icons/alert-question.png);
+}
+
+#Console\:clear {
+  list-style-image: url(chrome://browser/skin/icons/delete.png);
+ }
+
+/* toolbars */
+
+#TextboxEval {
+  margin: 2px;
+}
+
+#ButtonEval {
+  margin: 2px 2px 2px 0;
+}
+
+toolbarseparator {
+  min-height: 1em;
+}

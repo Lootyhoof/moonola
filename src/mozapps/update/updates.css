@@ -1,0 +1,253 @@
+/* General */
+#updates, .wizard-page-box {
+  margin: 0;
+  padding: 0;
+}
+
+wizardpage {
+  height: 360px;
+  width: 700px;
+}
+
+wizardpage > *:not(updateheader) {
+  margin: 10px 25px;
+}
+
+.update-header {
+  min-height: 64px;
+  padding: 5px;
+  background: url(chrome://branding/content/icon64.png),url(chrome://browser/skin/icons/Tool-background.png);
+  background-position: center right,top left;
+  background-repeat: no-repeat,repeat-x;
+}
+
+.update-content {
+  padding: 10px;
+}
+
+.wizard-button > .button-box {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.wizard-button[dlgtype=finish],
+.heed {
+  font-weight: bold;
+}
+
+.wizard-button[dlgtype=finish].heed {
+  list-style-image:url(chrome://global/skin/CuteMenus/restart.png);
+}
+
+.wizard-button[dlgtype=finish] {
+  list-style-image:url(chrome://global/skin/CuteMenus/accept.png);
+}
+
+link,
+.inline-link {
+  color: #1f9afd;
+  margin: 1px 5px 4px;
+  text-decoration: none !important;
+}
+
+link > label {
+  margin: 0;
+  padding: 1px;
+}
+
+link:hover,
+.inline-link:hover {
+  color: #00f;
+}
+
+link:hover:active,
+.inline-link:hover:active {
+  color: #f00;
+}
+
+#checkingProgress {
+  margin: 0 5px;
+}
+
+/* License Page */
+#licenseContent,
+license,
+remotecontent {
+  -moz-appearance: listbox;
+  margin: 1px 5px 2px 6px;
+  padding-bottom: 1px;
+}
+
+.loadingBox {
+  padding: 3px 5px;
+}
+.licenseLoadingThrobber,
+.remoteLoadingThrobber {
+  margin-top: 3px;
+}
+.licenseLoadingThrobber[state=loading],
+.remoteLoadingThrobber[state=loading] {
+  list-style-image: url(chrome://global/skin/throbber/throbber.gif);
+}
+.licenseLoadingThrobber[state=error],
+.remoteLoadingThrobber[state=error] {
+  list-style-image: url(chrome://browser/skin/Info.png);
+}
+
+/* Update Found Page */
+#moreDetails {
+  margin: 1px 5px 4px 3px;
+}
+
+wizard[currentpageid=updatesfound] .wizard-button[dlgtype=next] > .button-box {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#updateForMoreInfo {
+  margin-left: 5px;
+}
+
+#updateName, #updateFinishedName {
+  font-weight: bold;
+  font-size: larger;
+}
+
+#alertImage {
+  margin-right: 5px;
+  list-style-image: url(chrome://browser/skin/icons/alert-warning.png);
+}
+
+#incompatibleListbox {
+  margin-bottom: 6px;
+}
+
+#incompatibleWarning {
+  color: #000;
+  margin: 1px 5px 4px 5px;
+  padding: 3px;
+  border: 1px outset #fff;
+  background: url(chrome://global/skin/icons/NotificationGradient.png) top repeat-x #ff8;
+}
+
+#unsupportedLabel, #unsupportedLinkLabel {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* Downloading Page */
+#downloadName {
+  margin-top: 3px;
+}
+
+#downloadStatusTop, #downloadStatusLine {
+  -moz-box-align: center;
+}
+
+#downloadStatus {
+  height: 3em !important;
+}
+
+#downloadThrobber {
+  margin-left: 5px;
+  list-style-image: url(chrome://global/skin/throbber/throbber.png);
+}
+#downloadThrobber[state=loading] {
+  list-style-image: url(chrome://global/skin/throbber/throbber.gif);
+}
+
+#downloadStatusLine {
+  -moz-box-align: start;
+}
+
+#downloadProgress {
+  margin-left: 5px;
+}
+
+#pauseButton {
+  min-width: 0;
+  min-height: 0;
+  margin: 0 5px;
+  padding: 0;
+  list-style-image: url(chrome://global/skin/CuteMenus/pause.png);
+  border: 0 !important;
+  background: none !important;
+}
+
+/* !Important must be used otherwise this won't immediately take affect */
+#pauseButton > .button-box {
+  padding: 0 !important;
+}
+
+#pauseButton:hover {
+  list-style-image: url(chrome://mozapps/skin/downloads/state-pause.png);
+}
+
+#pauseButton[paused=true] {
+  list-style-image: url(chrome://global/skin/CuteMenus/forward.png);
+}
+
+#pauseButton[paused=true]:hover {
+  list-style-image: url(chrome://mozapps/skin/downloads/state-resume.png);
+}
+
+#pauseButton[disabled=true],
+#pauseButton[paused=true][disabled=true] {
+  opacity: .7 !important;
+}
+
+#verificationFailedIcon {
+  margin-left: 5px;
+  list-style-image: url(chrome://browser/skin/Info.png);
+}
+
+/* Error Page */
+#errorReason {
+  font-weight: bold;
+  margin: 1px 5px 2px 6px !important;
+}
+
+/* Update History Window */
+update {
+  background-color: #f2f2f2;
+  border-bottom: 1px dotted #c0c0c0;
+}
+
+.update-name {
+  font-weight: bold;
+}
+
+.update-label-column {
+  -moz-box-align: end;
+}
+
+.update-details-link {
+  margin: 0;
+}
+
+.update-type {
+  font-weight: bold;
+  color: #900;
+}
+
+#historyItems {
+  height: 200px;
+  margin: 1px -10px -8px;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+#historyItems > scrollbox {
+  margin-bottom: 1px;
+}
+
+#historyItems + separator {
+  display: none;
+}
+
+.updatePrefsInfo {
+  font-size: smaller;
+  margin-left: 27px;
+  margin-bottom: 10px;
+}

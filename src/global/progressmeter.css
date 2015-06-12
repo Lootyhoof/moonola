@@ -1,0 +1,19 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+progressmeter {
+  height: 14px;
+  min-width: 128px;
+  background: url(chrome://global/skin/progressmeter/background.png) repeat-x left center;
+}
+
+progressmeter[mode="undetermined"] {
+  background: url(chrome://global/skin/progressmeter/busy.gif) repeat-x left center;
+}
+
+.progress-bar {
+  background: url(chrome://global/skin/progressmeter/progress.gif) repeat-x left center;
+}
+
+.progressmeter-statusbar {
+  min-width: 96px;
+}

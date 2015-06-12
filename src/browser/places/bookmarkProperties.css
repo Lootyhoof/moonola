@@ -1,0 +1,90 @@
+#bookmarkproperties {
+  padding: 0;
+}
+
+#bookmarkproperties #placesInfoGrid {
+  padding: 8px 8px 5px;
+}
+
+#bookmarkproperties #folderTree {
+  margin: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+#bookmarkproperties .dialog-button-box {
+  margin: 0;
+}
+
+.dialog-button-box .dialog-button[dlgtype="extra2"] {
+  list-style-image: url(chrome://global/skin/CuteMenus/edit_add.png);
+}
+
+/* folder menulist */
+.folder-icon > .menulist-label-box > .menulist-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.folder-icon > .menu-iconic-left {
+  display: -moz-box;
+}
+
+.folder-icon {
+  list-style-image: url(chrome://browser/skin/icons/folder_closed.png) !important;
+}
+
+/* expander */
+#expander {
+  min-width: 0;
+}
+
+#expander > hbox > .button-icon {
+  margin: 0;
+}
+
+.up {
+  list-style-image: url(chrome://global/skin/arrow/arrow-up.gif);
+}
+
+.down {
+  list-style-image: url(chrome://global/skin/arrow/arrow-dn.gif);
+}
+
+/* Make the microsummary picker look like a regular textbox */
+
+menulist#namePicker[droppable=false] {
+  cursor: text;
+  height: 1.55em;
+  margin: 2px 3px;
+  padding: 1px 2px;
+  border: 1px solid;
+  -moz-border-top-colors: #888;
+  -moz-border-right-colors: #ccc;
+  -moz-border-bottom-colors: #ccc;
+  -moz-border-left-colors: #888;
+  border-radius: 0;
+  background: #f2f2f2;
+}
+
+menulist#namePicker[droppable=false][disabled=true] {
+  cursor: default;
+  color: #808080;
+  -moz-border-top-colors: #f00;
+  -moz-border-right-colors: #f00;
+  -moz-border-bottom-colors: #f00;
+  -moz-border-left-colors: #f00;
+}
+
+menulist#namePicker[droppable=false]  > .menulist-editable-box > .menulist-editable-input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Hide the drop marker and the popup when no microsummaries are available. */
+menulist#namePicker[droppable=false] > .menulist-dropmarker,
+menulist#namePicker[droppable=false] > menupopup {
+  display: none;
+}

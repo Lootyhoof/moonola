@@ -1,0 +1,203 @@
+#downloadsPanel {
+  margin: 0 -12px;
+}
+
+#downloadsPanel .panel-arrow {
+  margin:-2px 0 -4px;
+}
+
+#downloadsPanel .panel-arrowcontent {
+  margin: 3px 0;
+  padding: 0 0 6px;
+}
+
+#downloadsListBox {
+  margin: 2px 2px 6px;
+  border-radius: 4px 4px 0 0;
+}
+
+#downloadsHistory {
+  margin: 10px 10px 3px !important;
+  border: 1px solid #a2a6ad !important;
+}
+
+#downloadsHistory:hover {
+  border-color: #75797f !important;
+}
+
+#downloadsHistory:hover:active {
+  border-color: #000 !important;
+}
+
+richlistitem {
+  padding: 3px 7px;
+  border-bottom: 1px solid #c0c0c0;
+  outline: 0;
+}
+
+#downloadsListBox richlistitem:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+#downloadsListBox richlistitem:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+.downloadTypeIcon {
+  height: 32px;
+  width: 32px;
+}
+
+#downloadsSummary > .downloadTypeIcon {
+  list-style-image: url(chrome://browser/skin/icons/toolbar.png);
+  -moz-image-region: rect(0 288px 32px 256px);
+}
+
+#downloadsSummaryDescription {
+  color: #1f9afd;
+  font-weight: bold;
+}
+
+#downloadsSummaryDescription:hover {
+  color: #00f;
+}
+
+#downloadsPanel[hasdownloads] #downloadsFooter {
+  padding: 2px 7px;
+  border-top: 1px solid #888;
+}
+
+.blockedIcon {
+  list-style-image: url(chrome://browser/skin/icons/alert-error.png);
+}
+
+#downloadsSummaryDetails,
+.downloadContainer {
+  font-size: 90%;
+}
+
+#downloadsSummaryDescription,
+.downloadTarget {
+  cursor: inherit;
+  font-size: larger;
+}
+
+.downloadTarget {
+  font-size: calc(100%/0.9);
+}
+
+#downloadsSummaryDetails
+.downloadDetails {
+  cursor: inherit;
+  opacity: .6;
+}
+
+.downloadButton {
+  width: 16px;
+  height: 16px;
+  margin: 3px;
+  padding: 0;
+  border: 0;
+  background: none !important;
+}
+
+.downloadButton.downloadCancel {
+  list-style-image: url(chrome://global/skin/CuteMenus/delete.png);
+}
+
+.downloadButton.downloadRetry {
+  list-style-image: url(chrome://global/skin/CuteMenus/reload.png);
+}
+
+.downloadButton.downloadShow {
+  list-style-image: url(chrome://global/skin/CuteMenus/fileopen.png);
+}
+
+.downloadButton:hover .button-icon {
+  height: 14px;
+  width: 14px;
+  margin: 1px 3px 1px 1px;
+}
+
+.download-progress .status {
+  color: #000;
+  font-weight: bold;
+}
+
+#downloads-indicator {
+  border-radius: 3px;
+}
+
+#downloads-indicator[attention] {
+  box-shadow: 0 0 11px #1f9afd inset,0 0 5px #1f9afd inset,0 0 2px #1f9afd inset;
+}
+
+#downloads-indicator[paused] {
+  box-shadow: 0 0 11px #dd0 inset,0 0 5px #dd0 inset,0 0 2px #dd0 inset;
+}
+
+#downloads-indicator-anchor {
+  position: relative;
+}
+
+#downloads-indicator-icon,
+#downloads-indicator:not([counter]) #downloads-indicator-counter {
+  background: url(chrome://browser/skin/icons/download.png) center no-repeat;
+}
+
+#downloads-indicator:hover #downloads-indicator-icon,
+#downloads-indicator:not([counter]):hover #downloads-indicator-counter {
+  background-size: 28px 28px;
+}
+
+#downloads-indicator-notification {
+  opacity: 0;
+  background: url(chrome://browser/skin/icons/download-notification.png) center no-repeat;
+  background-size: 32px 32px;
+}
+
+toolbar[iconsize=small] #downloads-indicator-icon,
+toolbar[iconsize=small] #downloads-indicator:not([counter]) #downloads-indicator-counter {
+  background: url(chrome://browser/skin/icons/download-small.png) center no-repeat;
+}
+
+toolbar[iconsize=small] #downloads-indicator:hover #downloads-indicator-icon,
+toolbar[iconsize=small] #downloads-indicator:not([counter]):hover #downloads-indicator-counter {
+  background-size: 20px 20px;
+}
+
+toolbar[iconsize=small] #downloads-indicator-notification {
+  background-size: 24px 24px;
+}
+
+@-moz-keyframes downloadsIndicatorNotification {
+  from { opacity: 0; transform: translate(-128px, 128px) scale(8); }
+  20% { opacity: .85; animation-timing-function: ease-out; }
+  to { opacity: 0; transform: translate(0) scale(1); }
+}
+
+#downloads-indicator[notification=start] #downloads-indicator-notification {
+  animation-name: downloadsIndicatorNotification;
+  animation-duration: 1s;
+}
+
+#downloads-indicator-counter {
+  height: 10px;
+  margin: 0;
+  color: hsl(0,0%,30%);
+  text-align: center;
+  text-shadow: 0 1px #fff;
+  font-family: Lucida Grande, sans-serif, Helvetica;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+#downloads-indicator-progress {
+  width: 20px;
+  height: 6px;
+  min-width: 0;
+  min-height: 0;
+  margin-top: 1px;
+  margin-bottom: 2px;
+  border: 1px solid transparent;
+}

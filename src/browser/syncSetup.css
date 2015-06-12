@@ -1,0 +1,112 @@
+wizard {
+  width: 55em;
+  height: 45em;
+}
+
+.wizard-header-icon {
+  visibility: collapse;
+}
+
+.wizard-header-label {
+  font-size: 24pt;
+  font-weight: normal;
+}
+
+.confirm {
+  padding: 1em;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+#mergeChoiceRadio > .mergeChoiceButton {
+  margin: 3px;
+  padding: .2em;
+  border: 2px solid;
+  -moz-border-top-colors: #404040 #fff;
+  -moz-border-right-colors: #404040 #808080;
+  -moz-border-bottom-colors: #404040 #808080;
+  -moz-border-left-colors: #404040 #fff;
+  border-radius: 5px;
+  background: url(chrome://global/skin/button/body.png) repeat-x top left #fafafb;
+}
+
+#mergeChoiceRadio > .mergeChoiceButton[selected=true] {  
+  background: url(chrome://global/skin/button/body-active.png) repeat-x top left #c5ebf9;
+}
+
+.accountChoiceButton,
+#mergeChoiceRadio > .mergeChoiceButton {
+  background-size: auto 100% !important;
+}
+
+description > .text-link {
+  margin: 0;
+}
+
+.success,
+.error {
+  padding: 2px;
+  border-radius: 2px;
+}
+
+.error {
+  background-color: #f00 !important;
+  color: #fff !important;
+}
+
+.success {
+  background-color: #0f0 !important;
+}
+
+.mainDesc,
+.warning {
+  font-weight: bold;
+  font-size: 100%;
+}
+
+.warning {
+  color: #f00;
+}
+
+.normal {
+  font-size: 100%;
+}
+
+#newAccount,
+#existingAccount {
+  min-height: 5em;
+}
+
+#newAccount > hbox > image {
+  list-style-image: url(chrome://browser/skin/icons/sync-usedNever.png);
+}
+
+#existingAccount > hbox > image {
+  list-style-image: url(chrome://browser/skin/icons/sync-usedBefore.png);
+}
+
+.inputColumn {
+  margin-right: 2px;
+}
+
+#tosDesc {
+  width: 20em;
+}
+
+#passphraseHelpSpacer {
+  width: .5em;
+}
+
+#add-device-throbber > image,
+#pairDeviceThrobber > image,
+#login-throbber > image {
+  list-style-image: url(chrome://global/skin/throbber/throbber.gif);
+}
+
+#captchaFeedback {
+  visibility: hidden;
+}
+
+#successPageIcon {
+  list-style-image: url(chrome://browser/skin/icons/sync-32.png);
+}

@@ -1,0 +1,273 @@
+@import url(chrome://global/skin/);
+
+#topBar,
+.viewSelector {
+  color: #5a5a5a;
+  margin: 0;
+  padding-left: 10px;
+  border-bottom: 2px groove #d4d0c8;
+  background-image: url(chrome://browser/skin/icons/Tool-background2.png);
+  background-size: auto 100%;
+}
+
+#viewGroup > radio {
+  -moz-box-orient: vertical;
+  color: #000;
+  min-width: 90px;
+  margin: 1px;
+  padding: 0 3px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+#viewGroup > radio:hover {
+  -moz-border-top-colors: #808080 #fff;
+  -moz-border-right-colors: #808080 #02a1fe;
+  -moz-border-bottom-colors: #808080 #02a1fe;
+  -moz-border-left-colors: #808080 #fff;
+  background: transparent url(chrome://global/skin/button/hover.png) repeat-x top left;
+}
+
+#viewGroup > radio[selected=true] {
+  -moz-border-top-colors: #808080 #fff;
+  -moz-border-right-colors: #808080 #02a1fe;
+  -moz-border-bottom-colors: #808080 #02a1fe;
+  -moz-border-left-colors: #808080 #fff;
+  background: transparent url(chrome://global/skin/button/select.png) repeat-x top left;
+}
+
+#generalTab {
+  list-style-image: url(chrome://browser/skin/preferences/main1.png);
+}
+
+#generalTab:hover, #generalTab[selected=true] {
+  list-style-image: url(chrome://browser/skin/preferences/main.png);
+}
+
+#mediaTab {
+  list-style-image: url(chrome://browser/skin/preferences/applications1.png);
+}
+
+#mediaTab:hover, #mediaTab[selected=true] {
+  list-style-image: url(chrome://browser/skin/preferences/applications.png);
+}
+
+#feedTab {
+  list-style-image: url(chrome://browser/skin/preferences/feed1.png);
+}
+
+#feedTab:hover, #feedTab[selected=true] {
+  list-style-image: url(chrome://browser/skin/preferences/feed.png);
+}
+
+#permTab {
+  list-style-image: url(chrome://browser/skin/preferences/privacy1.png);
+}
+
+#permTab:hover, #permTab[selected=true] {
+  list-style-image: url(chrome://browser/skin/preferences/privacy.png);
+}
+
+#securityTab {
+  list-style-image: url(chrome://browser/skin/preferences/security1.png);
+}
+
+#securityTab:hover, #securityTab[selected=true] {
+  list-style-image: url(chrome://browser/skin/preferences/security.png);
+}
+
+deck {
+  padding: 10px;
+  background: url(chrome://global/skin/icons/dialog-background.png) -20px 0 repeat-y #dadce4;
+}
+
+/* Misc */
+tree {
+  margin: 5px;
+}
+
+.gridSeparator {
+  width: 5px;
+}
+
+textbox {
+  margin-top: 1px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+textbox.header {
+  font-size: 1.25em;
+  margin-left: 3px;
+}
+
+.iframe {
+  margin: 5px;
+  overflow: auto;
+  background: #f2f2f2;
+}
+
+.fixedsize {
+  height: 8.5em;
+}
+
+textbox[disabled] {
+  font-style: italic;
+}
+
+/* General Tab */
+groupbox.collapsable caption .caption-icon {
+  width: 9px;
+  height: 9px;
+  padding: 4px 0;
+  list-style-image: url(chrome://global/skin/tree/twisty-open.png);
+}
+
+groupbox.collapsable[closed=true] caption .caption-icon {
+  list-style-image: url(chrome://global/skin/tree/twisty.png);
+}
+
+groupbox.collapsable[closed=true] {
+  min-height: 1.3em;
+}
+
+groupbox tree {
+  margin: 0 -4px -4px;
+  border: 0;
+}
+
+groupbox.treebox .groupbox-body {
+  padding-top: 3px;
+}
+
+#securityBox description {
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+#general-security-identity {
+  white-space: pre-wrap;
+  line-height: 2em;
+}
+
+/* Media Tab */
+#imagetree {
+  min-height: 10em;
+  margin: -10px -10px 0;
+  border: 0;
+  border-bottom: 1px solid #fff;
+}
+
+#mediaSplitter {
+  height: .8em;
+  border: 0;
+  background: none;
+}
+
+#mediaGrid {
+  min-height: 9em;
+}
+
+#mediaLabelColumn {
+  min-width: 10em;
+}
+
+.inset.iframe {
+  margin: 5px -10px -10px;
+  border: 0;
+  border-top: 1px solid #808080;
+}
+
+#thepreviewimage {
+  margin: 1em;
+}
+
+treechildren::-moz-tree-cell-text(broken) {
+  font-style: italic;
+  color: #808080;
+}
+
+/* Feeds Tab / Permissions Tab */
+#permPanel > hbox {
+  -moz-box-align: center;
+}
+
+#feedtree {
+  margin-bottom: 0;
+}
+
+#feedListbox,
+#permList {
+  overflow: auto;
+  margin: -10px;
+  border: 0;
+  background-color: #f2f2f2;
+}
+
+#permList {
+  margin-top: 5px;
+  border-top: 1px solid #808080;
+}
+
+#feedListbox richlistitem,
+#permList > vbox {
+  min-height: 25px;
+  padding: 6px;
+  border-bottom: 1px dotted #c0c0c0;
+}
+
+#feedListbox richlistitem:hover,
+#feedListbox richlistitem[selected=true],
+#permList > vbox:hover {
+  color: #0041aa;
+  background: url(chrome://mozapps/skin/downloads/downloadSelected.png) center transparent;
+}
+
+.feedTitle, label,
+#security-privacy-groupbox .fieldValue{
+  font-weight: bold;
+}
+
+#permList > vbox > label {
+  font-weight: bold;
+}
+
+/* Security Tab */
+#securityPanel .caption-icon {
+  display: none;
+}
+
+#securityPanel .header {
+  font-size: 120%;
+}
+
+#securityPanel .fieldLabel {
+  margin: 2px 10px 3px;
+}
+
+#securityPanel .fieldValue {
+  margin: 2px 10px 0 10px;
+}
+
+#security-view-cookies {
+  margin-top: 7px;
+  margin-bottom: 6px;
+}
+
+#metadata {
+  background: url(chrome://global/skin/icons/dialog-background.png) repeat-y #dadce4;
+}
+
+#metadata > vbox > label {
+  color: #000;
+  margin: 0 0 10px;
+  padding: 5px 8px;
+  border: 1px inset #fff;
+  border-radius: 5px;
+  background: url(chrome://global/skin/icons/NotificationGradient.png) top repeat-x #2a8dfd;
+}
+
+#metadata > vbox > .groove {
+  display: none;
+}

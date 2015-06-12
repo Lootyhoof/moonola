@@ -1,0 +1,211 @@
+@import url(chrome://global/skin/inContentUI.css);
+@namespace html "http://www.w3.org/1999/xhtml";
+
+.main-content {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: linear-gradient(to right,#9fa2ae,#d9dbe3 100px,#dadce4);
+}
+
+#mainPrefPane {
+  padding: 0;
+}
+
+#mainPrefPane > .content-box {
+  padding: 8px 10px;
+}
+
+#mainPrefPane > vbox[data-category=landing] {
+  display: -moz-box !important;
+}
+
+vbox[data-category=landing] > .indent-small {
+  display: none;
+}
+
+#preferences-home {
+  display: block;
+  margin: -8px -10px 8px;
+  padding: 3px 50px;
+  border-bottom: 2px groove #d4d0c8;
+  background-image: url(chrome://browser/skin/icons/Tool-background2.png);
+}
+
+#header {
+  height: 29px;
+  margin: 0 -1px;
+  border-bottom: 1px solid #808080;
+  background: linear-gradient(#e8e8ec,#adaebb);
+}
+
+.nav-button {
+  min-width: 0;
+  list-style-image: url(chrome://browser/skin/icons/toolbar-small.png);
+}
+
+.nav-button[disabled=true] {
+  opacity: .3;
+}
+
+.nav-button > .toolbarbutton-icon {
+  margin: 0;
+}
+
+.nav-button:not([disabled=true]):hover > .toolbarbutton-icon {
+  height: 20px;
+  width: 20px;
+  margin: 2px;
+}
+
+#back-btn {
+  -moz-image-region: rect(0 24px 24px 0);
+}
+
+#forward-btn {
+  -moz-image-region: rect(0 48px 24px 24px);
+}
+
+.header-button > .toolbarbutton-text {
+  display: none;
+}
+
+.landingButton {
+  -moz-box-orient: vertical;
+  min-width: 90px;
+  margin: 1px;
+  padding: 0 3px;
+  border: 2px solid transparent;
+  background: none;
+}
+
+.landingButton:hover {
+  cursor: pointer;
+  -moz-border-top-colors: #808080 #fff;
+  -moz-border-right-colors: #808080 #02a1fe;
+  -moz-border-bottom-colors: #808080 #02a1fe;
+  -moz-border-left-colors: #808080 #fff;
+  background: transparent url(chrome://global/skin/button/hover.png) repeat-x top left;
+}
+
+.landingButton:hover:active {
+  -moz-border-top-colors: #808080 #fff;
+  -moz-border-right-colors: #808080 #02a1fe;
+  -moz-border-bottom-colors: #808080 #02a1fe;
+  -moz-border-left-colors: #808080 #fff;
+  background: transparent url(chrome://global/skin/button/select.png) repeat-x top left;
+}
+
+.landingButton-label {
+  margin-top: 4px;
+}
+
+.landingButton-icon,
+.preference-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.preference-icon {
+  margin: 0 20px;
+}
+
+.landingButton-icon[type=general] {
+  list-style-image: url(chrome://browser/skin/preferences/main1.png);
+}
+.preference-icon[type=general],
+.landingButton:hover .landingButton-icon[type=general] {
+  list-style-image: url(chrome://browser/skin/preferences/main.png);
+}
+
+.landingButton-icon[type=tabs] {
+  list-style-image: url(chrome://browser/skin/preferences/tabs1.png);
+}
+.preference-icon[type=tabs],
+.landingButton:hover .landingButton-icon[type=tabs] {
+  list-style-image: url(chrome://browser/skin/preferences/tabs.png);
+}
+
+.landingButton-icon[type=content] {
+  list-style-image: url(chrome://browser/skin/preferences/content1.png);
+}
+.preference-icon[type=content],
+.landingButton:hover .landingButton-icon[type=content] {
+  list-style-image: url(chrome://browser/skin/preferences/content.png);
+}
+
+.landingButton-icon[type=applications] {
+  list-style-image: url(chrome://browser/skin/preferences/applications1.png);
+}
+.preference-icon[type=applications],
+.landingButton:hover .landingButton-icon[type=applications] {
+  list-style-image: url(chrome://browser/skin/preferences/applications.png);
+}
+
+.landingButton-icon[type=privacy] {
+  list-style-image: url(chrome://browser/skin/preferences/privacy1.png);
+}
+.preference-icon[type=privacy],
+.landingButton:hover .landingButton-icon[type=privacy] {
+  list-style-image: url(chrome://browser/skin/preferences/privacy.png);
+}
+
+.landingButton-icon[type=security] {
+  list-style-image: url(chrome://browser/skin/preferences/security1.png);
+}
+.preference-icon[type=security],
+.landingButton:hover .landingButton-icon[type=security] {
+  list-style-image: url(chrome://browser/skin/preferences/security.png);
+}
+
+.landingButton-icon[type=advanced] {
+  list-style-image: url(chrome://browser/skin/preferences/advanced1.png);
+}
+.preference-icon[type=advanced],
+.landingButton:hover .landingButton-icon[type=advanced] {
+  list-style-image: url(chrome://browser/skin/preferences/advanced.png);
+}
+
+.landingButton-icon[type=sync] {
+  list-style-image: url(chrome://browser/skin/preferences/sync1.png);
+}
+.preference-icon[type=sync],
+.landingButton:hover .landingButton-icon[type=sync] {
+  list-style-image: url(chrome://browser/skin/preferences/sync.png);
+}
+
+caption {
+  font-size: 20px;
+}
+
+.heading {
+  -moz-box-align: center;
+  margin-bottom: 15px;
+  padding: 5px;
+  border: 1px inset #fff;
+  border-radius: 5px;
+  background-image: linear-gradient(#daedfd,#2a8dfd);
+}
+
+.heading > h1 {
+  margin: 5px 0;
+}
+
+prefpane > .content-box {
+  overflow: auto;
+}
+
+#applications-content {
+  padding: 15px;
+}
+
+#handlersView {
+  margin-bottom: 8px;
+  border: 1px inset #fff;
+  overflow-y: auto;
+}
+
+description > html|a {
+  cursor: pointer;
+}

@@ -1,0 +1,120 @@
+#downloadView {
+  -moz-user-focus: normal;
+  margin: 0;
+  border: 0;
+  background: url(chrome://mozapps/skin/downloads/downloadsBG.png) fixed no-repeat bottom right #f2f2f2;
+}
+
+/* Download View Items */
+richlistitem[type=download] {
+  min-height: 46px;
+  padding: 4px 8px 4px 4px;
+  border-bottom: 1px dotted #c0c0c0;
+}
+
+richlistitem[type=download] .name {
+  font-size: larger;
+}
+
+richlistitem[type=download] .dateTime {
+  font-size: smaller;
+}
+
+richlistitem[type=download]:not([selected=true]) .dateTime,
+richlistitem[type=download]:not([selected=true]) .status {
+  color: #909090;
+}
+
+#active-downloads,
+#other-downloads {
+  font-weight: bold;
+}
+
+.mini-button {
+  min-width: 16px;
+  min-height: 0;
+  margin: 0;
+  padding: 0 1px;
+  border: 0;
+  background: transparent !important;
+}
+
+.cancel {
+  list-style-image: url(chrome://global/skin/CuteMenus/delete.png);
+}
+.cancel:hover {
+  list-style-image: url(chrome://mozapps/skin/downloads/state-cancel.png);
+}
+.pause {
+  list-style-image: url(chrome://global/skin/CuteMenus/pause.png);
+}
+.pause:hover {
+  list-style-image: url(chrome://mozapps/skin/downloads/state-pause.png);
+}
+.pause[disabled=true] {
+  opacity: .7 !important;
+}
+.resume {
+  list-style-image: url(chrome://global/skin/CuteMenus/forward.png);
+}
+.resume:hover {
+  list-style-image: url(chrome://mozapps/skin/downloads/state-resume.png);
+}
+.retry {
+  list-style-image: url(chrome://global/skin/CuteMenus/reload.png);
+}
+.retry:hover {
+  list-style-image: url(chrome://mozapps/skin/downloads/state-retry.png);
+}
+.delete {
+  list-style-image: url(chrome://global/skin/CuteMenus/Cleanup.png);
+}
+.delete:hover {
+  list-style-image: url(chrome://mozapps/skin/downloads/state-del.png);
+}
+
+.blockedIcon {
+  list-style-image: url(chrome://browser/skin/icons/alert-error.png);
+}
+
+/* prevent flickering when changing states */
+.downloadTypeIcon {
+  min-height: 32px;
+  min-width: 32px;
+  margin-right: 5px;
+}
+
+progressmeter {
+  margin: 0 8px 0 4px;
+}
+
+/* Download Manager Command Bar */
+#search {
+  padding-bottom: 1px;
+  border-top: 2px groove #d4d0c8;
+  background: url(chrome://browser/skin/icons/Tool-background2.png) center left repeat-x #dadce4;
+}
+
+#clearListButton {
+  list-style-image: url(chrome://global/skin/CuteMenus/Cleanup.png);
+}
+
+#clearListButton[disabled=true] {
+  opacity: .7 !important;
+}
+
+#searchbox[type=timed] {
+  -moz-appearance: none;
+  margin: 2px;
+  padding-left: 6px;
+  border: 1px solid #fff;
+  border-top-color: #808080;
+  border-right-color: #d0d0d0;
+  border-left-color: #a0a0a0;
+  border-radius: 11px;
+  background-color: #f2f2f2;
+}
+
+#searchbox[type=timed] .textbox-input-box {
+  min-width: 150px;
+}

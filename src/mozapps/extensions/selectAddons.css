@@ -1,0 +1,159 @@
+#view-deck,
+#select-list {
+  background: #dadce4;
+}
+
+.heading {
+  font-size: 270%;
+  text-align: center;
+  margin: 0 120px;
+}
+
+.progress {
+  margin: 10px 128px;
+}
+
+.progress-label,
+#errors-description {
+  text-align: center;
+  margin: 0 10px;
+}
+
+#checking-heading,
+#update-heading,
+#errors-heading {
+  margin-top: 90px;
+}
+
+#select-heading,
+#confirm-heading {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#select-description,
+#confirm-description {
+  margin: 10px;
+}
+
+#select-grid column {
+  -moz-box-align: center;
+}
+
+#select-grid row {
+  -moz-box-align: stretch;
+}
+
+#select-grid label {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.select-cell {
+  -moz-box-align: center;
+  -moz-box-pack: start;
+}
+
+#select-header .select-cell {
+  -moz-box-sizing: border-box;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  border-left: 1px solid #fff;
+  background: url(chrome://global/skin/tree/header.png) repeat-x #afb2bf;
+}
+
+.select-keep {
+  -moz-box-pack: center;
+}
+
+.select-icon {
+  width: 20px;
+}
+
+.select-keep .addon-keep-checkbox {
+  margin: 0;
+  padding: 0;
+  width: 13px;
+}
+
+.select-keep .checkbox-label-box {
+  display: none;
+}
+
+#select-rows .select-name {
+  margin-left: 2px;
+}
+
+.addon-name,
+.addon-action-message,
+.addon-action-update {
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 1px 5px 2px;
+}
+
+#select-grid separator {
+  border-top: 1px solid #808080;
+  height: 0;
+  margin-top: .4em;
+  margin-bottom: .4em;
+}
+
+.addon:not([active]) .addon-name,
+.addon:not([active]) .addon-action-message,
+.addon:not([active]) .addon-action-update {
+  color: #999;
+}
+
+.addon-icon {
+  height: 16px;
+  width: 16px;
+  margin-left: 4px;
+  list-style-image: url(chrome://mozapps/skin/extensions/extensionGeneric-16.png);
+}
+
+.addon-icon[type=theme] {
+  list-style-image: url(chrome://global/skin/CuteMenus/themes.png);
+}
+
+.addon-icon[type=plugin] {
+  list-style-image: url(chrome://mozapps/skin/plugins/pluginGeneric-16.png);
+}
+
+.addon-icon[type=dictionary] {
+  list-style-image: url(chrome://global/skin/CuteMenus/spellcheck.png);
+}
+
+.action-list {
+  margin-top: 10px;
+  -moz-margin-start: 5em;
+}
+
+.action-header {
+  margin-bottom: 10px;
+}
+
+#confirm .addon {
+  -moz-margin-start: 3em;
+  -moz-box-align: center;
+}
+
+.addon:not([active]) .addon-icon,
+#disable-list .addon-icon,
+#incompatible-list .addon-icon {
+  opacity: .3;
+}
+
+#footer {
+  padding: 15px 12px;
+  border-top: 2px groove #d4d0c8;
+  background: linear-gradient(#e8e8ec,#adaebb);
+}
+
+.progress-label,
+#footer-label {
+  font-style: italic;
+  color: #444;
+}

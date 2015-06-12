@@ -1,0 +1,123 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+@namespace html url(http://www.w3.org/1999/xhtml);
+
+menulist {
+  color: #000;
+  margin: 1px 3px;
+  padding: 2px 3px;
+  border: 2px solid;
+  -moz-border-top-colors: transparent #444;
+  -moz-border-right-colors: #999 #444;
+  -moz-border-bottom-colors: #999 #444;
+  -moz-border-left-colors: transparent #444;
+  border-radius: 5px;
+  background: url(chrome://global/skin/button/body.png) repeat-x top left #fafafb;
+  background-clip: padding-box;
+}
+
+menulist:focus {
+  background: url(chrome://global/skin/button/body-focus.png) repeat-x top left #c6feff;
+  background-clip: padding-box;
+}
+
+menulist[default] {
+  -moz-border-top-colors: #02a1fe #444;
+  -moz-border-right-colors: #02a1fe #444;
+  -moz-border-bottom-colors: #02a1fe #444;
+  -moz-border-left-colors: #02a1fe #444;
+  background: url(chrome://global/skin/button/body-active.png) repeat-x top left #c5ebf9;
+}
+
+menulist:hover {
+  background: url(chrome://global/skin/button/body-hover.png) repeat-x top left #b8e9fe;
+  background-clip: padding-box;
+}
+
+menulist[open] {
+  color: #fff;
+  -moz-border-top-colors: #ccc #444;
+  -moz-border-right-colors: #ccc #444;
+  -moz-border-bottom-colors: #ccc #444;
+  -moz-border-left-colors: #ccc #444;
+  background: url(chrome://global/skin/button/body-active.png) repeat-x top left #c5ebf9;
+}
+
+menulist[disabled=true] {
+  color: #d4d0c8;
+  -moz-border-top-colors: transparent #666 !important;
+  -moz-border-right-colors: transparent #666 !important;
+  -moz-border-bottom-colors: transparent #666 !important;
+  -moz-border-left-colors: transparent #666 !important;
+  background: url(chrome://global/skin/button/body-disabled.png) repeat-x top left #fafafb !important;
+  background-clip: padding-box;
+}
+
+.menulist-label-box {
+  font-weight: bold;
+  min-width: 60px !important;
+}
+
+.menulist-icon {
+  max-height: 16px;
+  margin: 1px 0;
+  padding: 0 2px;
+}
+
+.menulist-dropmarker {
+  width: 18px;
+  padding: 1px 0 1px 2px;
+  list-style-image:url(chrome://browser/skin/icons/url_dropmarker.png);
+  -moz-image-region: rect(0 16px 16px 0);
+}
+
+.dropmarker-icon {
+  max-height: 16px;
+}
+
+menulist[open] > .menulist-dropmarker {
+  -moz-image-region: rect(16px 16px 32px 0);
+}
+
+menulist[disabled=true] > .menulist-dropmarker {
+  opacity: .5;
+}
+
+/* editable menulists */
+menulist[editable=true] {
+  padding: 3px;
+}
+
+html|*.menulist-editable-input {
+  font: inherit;
+  margin: 0 3px 0 0;
+  padding: 0 2px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+/* compact menulists */
+.menulist-compact {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  max-height: 18px;
+  margin: 0;
+  padding: 0;
+  border-radius: 2px;
+}
+
+.menulist-compact > .menulist-label {
+  text-align: left;
+  margin: -1px 3px 1px !important;
+}
+
+.menulist-compact > .menulist-dropmarker {
+  margin: -1px 0 0 2px;
+  padding: 0;
+  list-style-image:url('chrome://browser/skin/icons/dropmarker.png');
+  -moz-image-region: rect(0 10px 10px 0);
+}
+
+.menulist-compact[open] > .menulist-dropmarker {
+  -moz-image-region: rect(10px 10px 20px 0);
+}

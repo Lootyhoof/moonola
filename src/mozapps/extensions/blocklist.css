@@ -1,0 +1,14 @@
+richlistitem {
+  padding: 6px 7px;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.addonName {
+  font-weight: bold;
+}
+
+.blockedLabel {
+  font-weight: bold;
+  font-style: italic;
+  color: #f00;
+}

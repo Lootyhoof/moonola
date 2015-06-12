@@ -1,0 +1,36 @@
+window {
+  background: url(chrome://global/skin/icons/dialog-background.png) repeat-y;
+  padding: 6px 6px 3px;
+}
+
+#instructions {
+  font-weight: bold;
+  font-size: larger;
+}
+
+#palette-box {
+  margin: 0 -6px 3px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #fff;
+}
+
+#main-box > box {
+  margin: 2px -1px 0 0;
+  overflow: visible;
+}
+
+#smallicons {
+  -moz-box-flex: 1;
+}
+
+separator {
+  display: none;
+}
+
+separator + hbox {
+  margin: 5px -6px -3px;
+  padding: 5px;
+  border-top: 2px groove #d4d0c8;
+  background: url(chrome://browser/skin/icons/Tool-background2.png) top left repeat-x #adaebb;
+}

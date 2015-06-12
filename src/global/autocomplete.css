@@ -1,0 +1,130 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+@namespace html url(http://www.w3.org/1999/xhtml);
+
+/* autocomplete */
+textbox {
+  cursor: default;
+}
+
+textbox[nomatch=true][highlightnonmatches=true] {
+  color: #f00;
+}
+
+textbox:not(.padded) {
+  padding: 0;
+}
+
+.textbox-input-box {
+  margin: 0;
+  padding:0;
+  -moz-box-align: center;
+}
+
+/* autocomplete popups */
+panel[type=autocomplete],
+panel[type=autocomplete-richlistbox],
+.autocomplete-history-popup {
+  padding: 0;
+  margin-top: -1px;
+  border-color: #808080;
+  background-color: #dadce4;
+}
+
+.autocomplete-history-popup {
+  max-height: 180px;
+}
+
+/* tree */
+.autocomplete-tree {
+  -moz-appearance: none !important;
+  border: 0 !important;
+  background-color: transparent !important;
+}
+
+.autocomplete-treecol {
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+.autocomplete-treebody::-moz-tree-cell-text {
+  padding-left: 8px;
+}
+
+.autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue) {
+  max-width: 16px;
+  height:16px;
+}
+
+/* richlistbox autocomplete */
+.autocomplete-richlistbox {
+  margin: 0;
+  border: 0 !important;
+}
+
+.autocomplete-richlistitem {
+  padding: 1px 2px;
+}
+
+.autocomplete-richlistitem:not(:first-child) {
+  border-top: 1px solid #c0c0c0;
+}
+
+.ac-site-icon {
+  width: 16px;
+  height: 16px;
+  margin: 5px 14px -7px 6px;
+}
+
+.ac-type-icon {
+  width: 16px;
+  height: 16px;
+  margin: 5px 0 -7px;
+}
+
+.ac-extra > .ac-result-type-tag {
+  margin: 0 4px;
+}
+
+.ac-extra > .ac-comment {
+  padding-right: 4px;
+}
+
+.ac-ellipsis-after {
+  margin: 0 !important;
+  padding: 0;
+  min-width: 1em;
+}
+
+.ac-normal-text {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.ac-normal-text > html|span {
+  margin: 0 !important;
+  padding: 0;
+}
+
+html|span.ac-emphasize-text {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+html|span.ac-emphasize-alt {
+  text-decoration: underline;
+}
+
+.ac-title, .ac-url {
+  overflow: hidden;
+}
+
+.autocomplete-richlistitem[type=tag] > hbox > .ac-title {
+ color: #0acf00;
+}
+
+/* textboxes inside toolbarpaletteitems */
+toolbarpaletteitem > toolbaritem > textbox > hbox > hbox > html|*.textbox-input,
+toolbarpaletteitem > toolbaritem > * > textbox > hbox > hbox > html|*.textbox-input {
+  visibility: hidden;
+}

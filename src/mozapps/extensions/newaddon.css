@@ -1,0 +1,112 @@
+@import url(chrome://global/skin/inContentUI.css);
+
+#addon-page {
+  padding: 0;
+}
+
+#addon-scrollbox {
+  overflow: auto;
+  -moz-box-orient: vertical;
+  -moz-box-flex: 1;
+}
+
+#spacer-start {
+  -moz-box-flex: 1;
+}
+
+#spacer-end {
+  -moz-box-flex: 3;
+}
+
+#addon-container {
+  overflow: visible;
+  max-width: 600px;
+  margin: 20px;
+  padding: 30px 90px;
+}
+
+#addon-info {
+  -moz-box-align: start;
+  margin: 25px 10px;
+}
+
+#icon {
+  max-width: 64px;
+  max-height: 64px;
+  margin-right: 10px;
+  list-style-image: url(extension.png);
+}
+
+#addon-info[type=theme] #icon {
+  list-style-image: url(themeGeneric.png);
+}
+
+#addon-info[type=locale] #icon {
+  list-style-image: url(location.png);
+}
+
+#addon-info[type=dictionary] #icon {
+  list-style-image: url(category-dictionaries.png);
+}
+
+#addon-info[type=plugin] #icon {
+  list-style-image: url(chrome://mozapps/skin/plugins/pluginGeneric.png);
+}
+
+#name {
+  font-size: 130%;
+}
+
+#later,
+#author,
+#location {
+  color: #888;
+}
+
+#warning {
+  -moz-box-align: center;
+  margin-bottom: 25px;
+}
+
+#warning-icon {
+  width: 16px;
+  height: 15px;
+  margin-right: 5px;
+  list-style-image: url(chrome://global/skin/icons/warning-16.png);
+}
+
+#allow {
+  margin-left: 84px;
+  margin-bottom: 20px;
+}
+
+#continuePanel,
+#restartPanel {
+  -moz-box-pack: end;
+  -moz-box-align: center;
+  margin-top: 25px;
+}
+
+#continuePanel {
+  -moz-box-pack: end;
+}
+
+#restartMessage {
+  text-align: right;
+}
+
+#restartSpacer {
+  -moz-box-flex: 1;
+}
+
+#restart-button {
+  list-style-image: url(chrome://global/skin/CuteMenus/reload.png);
+}
+
+#cancel-button {
+  list-style-image: url(chrome://global/skin/CuteMenus/delete.png);
+}
+
+#continue-button {
+  list-style-image: url(chrome://global/skin/CuteMenus/forward.png);
+}

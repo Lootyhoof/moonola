@@ -1,0 +1,99 @@
+#handlersView richlistitem {
+  min-height: 25px;
+  padding-right: 2px;
+}
+
+#handlersView treecol {
+  min-height: 18px;
+}
+
+.actionsMenu {
+  margin: 0 0 0 5px;
+  padding: 0 3px;
+}
+
+.typeIcon {
+  margin: 0 3px;
+}
+
+.actionIcon {
+  margin: 0 5px 0 10px;
+}
+
+richlistitem label {
+  margin-left: 1px;
+  margin-top: 2px;
+}
+
+richlistitem {
+  min-height: 22px;
+}
+
+richlistitem[appHandlerIcon=ask],
+menuitem[appHandlerIcon=ask] {
+  list-style-image: url(chrome://global/skin/CuteMenus/help.png);
+}
+
+richlistitem[appHandlerIcon=save],
+menuitem[appHandlerIcon=save] {
+  list-style-image: url(chrome://global/skin/CuteMenus/save.png);
+}
+
+menuitem[oncommand="gApplicationsPane.chooseApp(event)"] {
+  list-style-image: url(chrome://global/skin/CuteMenus/configure_toolbars.png);
+}
+
+menuitem[oncommand="gApplicationsPane.manageApp(event)"] {
+  list-style-image: url(chrome://global/skin/CuteMenus/customize.png);
+}
+
+richlistitem[appHandlerIcon=feed],
+menuitem[appHandlerIcon=feed] {
+  list-style-image: url(chrome://browser/skin/feeds/feedIcon16.png);
+}
+
+richlistitem[appHandlerIcon=plugin],
+menuitem[appHandlerIcon=plugin] {
+  list-style-image: url(chrome://global/skin/CuteMenus/connect.png);
+}
+
+#install-plugin-handler {
+  list-style-image: url(chrome://global/skin/CuteMenus/search.png);
+}
+
+.actionsMenu .menulist-icon {
+  margin: 3px 3px 0 -2px;
+}
+
+.actionsMenu > menupopup {
+  background: url(chrome://global/skin/menu/menuback.png) repeat-y #dadce4;
+}
+
+.actionsMenu > menupopup > menuitem {
+  padding-left: 4px;
+}
+
+.menu-iconic-icon {
+  margin-left: 9px;
+}
+
+/* Ubuntu Plugin manager */
+
+#altplugin-title {
+  background: url(chrome://browser/skin/icons/Tool-background2.png) top left repeat-x #fdfdfe;
+}
+
+.altplugin-image-flexbox {
+  margin: 2px 4px;
+}
+
+#pluginsList {
+  margin: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+#pluginsList richlistitem {
+  min-height: 25px;
+}

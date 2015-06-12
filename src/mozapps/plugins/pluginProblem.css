@@ -1,0 +1,186 @@
+@namespace html url(http://www.w3.org/1999/xhtml);
+@import url(chrome://mozapps/skin/plugins/missingPlugin.css);
+
+.mainBox {
+  -moz-user-select: none;
+  position: relative;
+  text-align: center;
+  font: message-box;
+  font-size: 12px;
+  padding: 5px;
+  border: 1px solid #555;
+  border-radius: 12px;
+  background-color: #aaa;
+  text-shadow: #1f9afd 0 0 1px, #1f9afd 0 0 2px, #1f9afd 0 0 5px;
+}
+
+.icon {
+  -moz-appearance: none;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background-color: #aaa;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:-moz-type-unsupported .icon {
+  background-image: url(chrome://mozapps/skin/plugins/pluginGeneric.png);
+}
+:-moz-handler-vulnerable-updatable .icon,
+:-moz-handler-vulnerable-no-update .icon {
+  background-image: url(chrome://mozapps/skin/plugins/pluginClickToPlay.png);
+}
+:-moz-type-unsupported .icon[installable],
+:-moz-type-unsupported .icon[status=ready] {
+  background-image: url(chrome://mozapps/skin/plugins/pluginDownload.png);
+}
+:-moz-handler-disabled .icon {
+  background-image: url(chrome://mozapps/skin/plugins/pluginDisabled.png);
+}
+:-moz-handler-blocked .icon {
+  background-image: url(chrome://mozapps/skin/plugins/pluginBlocked.png);
+}
+:-moz-handler-crashed .icon {
+  background-image: url(chrome://mozapps/skin/plugins/pluginCrashed.png);
+}
+:-moz-handler-clicktoplay .icon {
+  background-image: url(chrome://mozapps/skin/plugins/PluginClickToPlayPlain.png);
+}
+
+:-moz-handler-clicktoplay .icon,
+:-moz-handler-clicktoplay .mainBox,
+:-moz-handler-clicktoplay .msgClickToPlay,
+:-moz-handler-vulnerable-updatable .msgClickToPlay,
+:-moz-handler-vulnerable-no-update .msgClickToPlay {
+  cursor: pointer;
+}
+
+:-moz-handler-clicktoplay .msgTapToPlay {
+  display: none;
+}
+
+:-moz-handler-clicktoplay .msgClickToPlay {
+  color: hsl(0,0%,50%);
+}
+
+:-moz-handler-clicktoplay .mainBox {
+  color: hsl(0,0%,50%);
+  text-shadow: none;
+  border: 1px dashed hsla(0,0%,50%,.5);
+  border-radius: 2.5px;
+  box-shadow: none;
+  background-image: none;
+  background-color: hsla(0,0%,90%,.3);
+  transition: background-color 150ms ease;
+}
+
+:-moz-handler-clicktoplay .mainBox:hover {
+  background-color: hsla(0,0%,90%,.7);
+}
+:-moz-handler-clicktoplay .mainBox:hover:active {
+  background-color: hsla(0,0%,90%,.8);
+}
+
+:-moz-handler-clicktoplay .mainBox,
+:-moz-handler-clicktoplay html|a {
+  color: hsl(0,0%,35%);
+}
+
+:-moz-handler-clicktoplay .hoverBox:hover,
+:-moz-handler-clicktoplay .hoverBox:hover html|a {
+  color: hsl(0,0%,20%);
+}
+
+:-moz-handler-clicktoplay .hoverBox:hover:active,
+:-moz-handler-clicktoplay .hoverBox:hover:active html|a {
+  color: hsl(0,0%,10%);
+}
+
+html|a, html|div {
+  color: #fff;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.throbber {
+  margin-left: 5px;
+  padding-left: 16px;
+  background: url(chrome://global/skin/throbber/throbber.gif) no-repeat;
+}
+
+.msg {
+  width: 100%;
+  cursor: default;
+}
+
+.msgBottomLinks {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.submitComment {
+  width: 340px;
+  height: 70px;
+  resize: none;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.submitURLOptInBox {
+  text-align: start;
+}
+
+.submitURLOptIn {
+  margin-left: -1px;
+}
+
+.submitButtonBox {
+  margin-top: 7px;
+}
+
+.submitButton {
+  float: right;
+}
+
+.submitStatus div {
+  min-height: 19px;
+}
+
+.helpIcon {
+  cursor: pointer;
+  float: left;
+  display: inline-block;
+  min-width: 16px;
+  min-height: 16px;
+  background: url(chrome://mozapps/skin/plugins/pluginHelp-16.png) no-repeat;
+}
+
+.closeIcon {
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  right: 4px;
+  border: 0;
+  background-color: transparent;
+  background-image: url(chrome://global/skin/icons/close.png);
+  background-repeat: no-repeat;
+}
+
+.closeIcon:hover {
+  background-position: -16px 0;
+}
+
+.closeIcon:hover:active {
+  background-position: -32px 0;
+}
+
+:-moz-handler-clicktoplay .closeIcon {
+  background-image: url(chrome://mozapps/skin/plugins/contentPluginClose.png);
+}
