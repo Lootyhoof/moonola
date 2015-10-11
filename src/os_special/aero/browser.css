@@ -5,13 +5,6 @@
   margin-left: 49px;
 }
 
-@media (-moz-os-version: windows-win10) {
-  /* Account for Win10's large caption buttons */
-  #main-window[sizemode="normal"] #navigator-toolbox:not([inFullscreen])[tabsontop=true] > #toolbar-menubar[autohide=true] ~ #TabsToolbar {
-    margin-right: 140px !important;
-  }
-}
-
 @media not all and (-moz-windows-classic) {
   #main-window[sizemode=maximized] #titlebar-buttonbox {
     margin-top: 3px;
