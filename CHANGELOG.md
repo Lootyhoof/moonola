@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.1.2
+- (Win10) use non-compositor style for window styling on Pale Moon 26 builds later than b2
+
 ### 1.1.1
 - fix vertical toolbar borders
 
