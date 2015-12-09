@@ -814,7 +814,8 @@ toolbar:not([iconsize=small]) .toolbarbutton-1 .toolbarbutton-icon {
 }
 
 #webrtc-status-button,
-#history-button {
+#history-button,
+#history-menu-button {
  -moz-image-region: rect(0 352px 32px 320px);
 }
 
@@ -917,7 +918,8 @@ toolbar[iconsize=small] #bookmarks-menu-button  {
 }
 
 toolbar[iconsize=small] #webrtc-status-button,
-toolbar[iconsize=small] #history-button {
+toolbar[iconsize=small] #history-button,
+toolbar[iconsize=small] #history-menu-button {
   -moz-image-region: rect(0 264px 24px 240px);
 }
 
