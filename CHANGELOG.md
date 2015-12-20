@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.2.0
+- (PM26) add history menu button
+
 ### 1.1.2
 - (Win10) use non-compositor style for window styling on Pale Moon 26 builds later than b2
 
