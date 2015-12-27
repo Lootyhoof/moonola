@@ -77,12 +77,14 @@ richlistitem {
 }
 
 #downloadsSummaryDescription,
-.downloadTarget {
+.downloadTarget,
+.downloadDisplayName {
   cursor: inherit;
   font-size: larger;
 }
 
-.downloadTarget {
+.downloadTarget,
+.downloadDisplayName {
   font-size: calc(100%/0.9);
 }
 
