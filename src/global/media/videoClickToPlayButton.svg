@@ -1,19 +1,12 @@
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
+<svg xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   id="videoPlayButtonOverlay"
-   preserveAspectRatio="xMinYMin meet"
-   viewBox="0 0 64 64">
+   preserveAspectRatio="xMinYMin meet" viewBox="0 0 64 64">
   <defs>
     <linearGradient id="whiteGradientStops">
-      <stop id="whiteGradientStop01" style="stop-color:#ffffff;stop-opacity:.95" offset="0" />
-      <stop id="whiteGradientStop02" style="stop-color:#ffffff;stop-opacity:.75" offset=".45" />
-      <stop id="whiteGradientStop03" style="stop-color:#ffffff;stop-opacity:.72" offset=".55" />
-      <stop id="whiteGradientStop04" style="stop-color:#ffffff;stop-opacity:.65" offset="1" />
+      <stop id="whiteGradientStop01" style="stop-color:#fff;stop-opacity:.95" offset="0" />
+      <stop id="whiteGradientStop02" style="stop-color:#fff;stop-opacity:.75" offset=".45" />
+      <stop id="whiteGradientStop03" style="stop-color:#fff;stop-opacity:.72" offset=".55" />
+      <stop id="whiteGradientStop04" style="stop-color:#fff;stop-opacity:.65" offset="1" />
     </linearGradient>
     <linearGradient
        x1="32"
@@ -24,8 +17,8 @@
        xlink:href="#whiteGradientStops"
        gradientUnits="userSpaceOnUse" />
     <linearGradient id="arrowGradientStops">
-      <stop id="arrowGradientStop01" style="stop-color:#333333;stop-opacity:.5" offset="0" />
-      <stop id="arrowGradientStop02" style="stop-color:#666666;stop-opacity:.5" offset="1" />
+      <stop id="arrowGradientStop01" style="stop-color:#333;stop-opacity:.5" offset="0" />
+      <stop id="arrowGradientStop02" style="stop-color:#666;stop-opacity:.5" offset="1" />
     </linearGradient>
     <linearGradient
        x1="32"
@@ -72,10 +65,10 @@
       <path
          d="M47.285,29.991L23.75,16.24c-0.357-0.208-0.692-0.278-0.969-0.221 C22.32,16.114,22,16.555,22,17.251v27.5c0,1.112,0.797,1.568,1.75,1.011l23.535-13.749C48.238,31.458,48.238,30.546,47.285,29.991z M0,0v64h64V0H0z M32,59C16.536,59,4,46.464,4,31S16.536,3,32,3s28,12.536,28,28S47.464,59,32,59z"
          id="dropShadowMaskPath"
-         style="fill:#ffffff;fill-opacity:1;stroke:none" />
-    </mask>       
+         style="fill:#fff;fill-opacity:1;stroke:none" />
+    </mask>
   </defs>
-  <path 
+  <path
      d="M32,3C16.536,3,4,15.536,4,31s12.536,28,28,28s28-12.536,28-28S47.464,3,32,3z M47.285,32.013L23.75,45.762C22.797,46.319,22,45.863,22,44.751v-27.5c0-0.697,0.32-1.137,0.781-1.232 c0.277-0.058,0.612,0.012,0.969,0.221l23.535,13.751C48.238,30.546,48.238,31.458,47.285,32.013z"
      mask="url(#dropShadowMask)"
      id="playButtonShadow"
@@ -84,7 +77,7 @@
      d="M22.781,16.019C22.32,16.114,22,16.555,22,17.251v27.5c0,1.112,0.797,1.568,1.75,1.011 l23.535-13.749c0.953-0.556,0.953-1.467,0-2.022L23.75,16.24C23.393,16.031,23.058,15.961,22.781,16.019z"
      id="playButtonArrow"
      style="fill:url(#arrowGradient);fill-opacity:1;stroke:none" />
-  <path 
+  <path
      d="M32,3C16.536,3,4,15.536,4,31s12.536,28,28,28s28-12.536,28-28S47.464,3,32,3z M47.285,32.013L23.75,45.762C22.797,46.319,22,45.863,22,44.751v-27.5c0-0.697,0.32-1.137,0.781-1.232 c0.277-0.058,0.612,0.012,0.969,0.221l23.535,13.751C48.238,30.546,48.238,31.458,47.285,32.013z"
      id="playButton"
      style="fill:url(#whiteGradient);fill-opacity:1;stroke:none" />

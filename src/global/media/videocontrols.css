@@ -36,6 +36,10 @@
   background: url(chrome://global/skin/media/noAudio.png) no-repeat center;
 }
 
+.muteButton[noAudio] + .volumeStack {
+  display: none;
+}
+
 .fullscreenButton {
   min-height: 22px;
   min-width: 22px;
@@ -49,40 +53,37 @@
   background-image: -moz-image-rect(url(fullscreenButton.png), 0, 32, 16, 16);
 }
 
-.volumeStack {
-  position: relative;
-  overflow: hidden;
-  width: 24px;
-  height: 70px;
-  margin: -70px 2px 22px -26px;
-  padding: 4px 0 2px;
-  border-radius: 4px 4px 0 0;
-  background-color: rgba(200,200,200,.85);
-}
-/*
-.volumeStack {
-  width: 35px;
-  margin: 0 7px;
-  overflow: hidden;
-}
-*/
-.volumeControl[orient=vertical] {
-  min-height: 64px;
+.volumeControl {
+  width: 32px;
+  opacity: 0;
 }
 
-.volumeBackgroundBar {
-  margin: 0 8px;
-  border-radius: 4px;
-  background-color: rgba(255,255,255,.5);
+.volumeBackground,
+.volumeForeground {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
 }
-/*
-.volumeBackgroundBar {
-  margin: 9px 0;
-  background-color: transparent;
-  background-image: linear-gradient(#eee,#eee),linear-gradient(transparent,transparent);
-  background-clip: content-box, padding-box;
+
+.volumeBackground {
+  background-image: url(chrome://global/skin/media/volume-empty.png);
 }
-*/
+
+.volumeForeground {
+  background-image: url(chrome://global/skin/media/volume-full.png);
+  background-clip: content-box;
+}
+
+.controlBar[audio-only] > .volumeStack {
+  /* This value is duplicated in the videocontrols.xml adjustControlSize function. */
+  -moz-margin-end: 8px;
+}
+
+.volumeControl .scale-thumb {
+  min-width: 0;
+  opacity: 0;
+}
+
 .durationBox {
   -moz-box-pack: center;
 }
@@ -125,7 +126,8 @@
   background: none;
 }
 
-.scrubber .scale-slider {
+.scrubber .scale-slider,
+.volumeControl .scale-thumb {
   margin-top: -9px;
   margin-bottom: 10px;
 }

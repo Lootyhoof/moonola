@@ -3,5 +3,6 @@ body {
 }
 
 video {
+  -moz-user-select: none;
   box-shadow: 0 0 15px #000;
 }
