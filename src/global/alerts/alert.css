@@ -50,18 +50,8 @@ label {
 
 .alertCloseButton {
   padding: 0 0 4px 2px;
-  list-style-image: url(chrome://global/skin/icons/close.png);
-  -moz-image-region: rect(0 16px 16px 0);
   border: 0;
   background: none;
-}
-
-.alertCloseButton:hover {
-  -moz-image-region: rect(0 32px 16px 16px);
-}
-
-.alertCloseButton:hover:active {
-  -moz-image-region: rect(0 48px 16px 32px);
 }
 
 .alertCloseButton > .toolbarbutton-text {
