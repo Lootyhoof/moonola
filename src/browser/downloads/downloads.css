@@ -1,3 +1,5 @@
+@import url("chrome://appver/skin/downloads.css");
+
 #downloadsPanel {
   margin: 0 -12px;
 }
@@ -60,11 +62,6 @@ richlistitem {
 
 #downloadsSummaryDescription:hover {
   color: #00f;
-}
-
-#downloadsPanel[hasdownloads] #downloadsFooter {
-  padding: 2px 7px;
-  border-top: 1px solid #888;
 }
 
 .blockedIcon {
