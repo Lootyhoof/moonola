@@ -58,6 +58,8 @@ richlistitem {
 }
 
 .downloadTypeIcon {
+  -moz-margin-end: 8px;
+  -moz-margin-start: 8px;
   height: 32px;
   width: 32px;
 }
