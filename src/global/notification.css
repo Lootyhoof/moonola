@@ -21,6 +21,11 @@ notification[type=critical] {
   border-top: 1px solid #808080 !important;
 }
 
+.messageText > .text-link {
+  color: inherit !important;
+  text-decoration: underline;
+}
+
 .messageImage {
   width: 16px;
   height: 16px;
@@ -45,6 +50,14 @@ notification[value=password-save] .messageImage {
 
 .popup-notification-description {
   max-width: 30em;
+}
+
+.popup-notification-learnmore-link {
+  margin-top: 1em !important;
+}
+
+.popup-notification-learnmore-link:not([href]) {
+  display: none;
 }
 
 .popup-notification-menubutton > menupopup menuitem {
