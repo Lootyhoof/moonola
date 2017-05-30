@@ -10,10 +10,65 @@ html|html {
   font: message-box;
 }
 
+html|body {
+  min-height: 92vh !important;
+  color: #000;
+  margin: 2em 4em;
+  padding: 1em;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 5px 5px 5px #404040;
+}
+
+html|body.tour {
+  min-height: 100vh !important;
+  border-radius: 0;
+}
+
 *|*.main-content {
   color: #000;
   border: 1px solid #808080;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 5px 5px 5px #404040;
+}
+
+html|input[type="checkbox"] {
+  visibility: hidden;
+  position: absolute;
+}
+
+/* Create a box to style as the checkbox */
+html|input[type="checkbox"] + html|label:before {
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
+}
+
+html|input[type="checkbox"] + html|label {
+  line-height: 1.2em;
+}
+
+html|input[type="checkbox"] + html|label:before {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  background-image: url(chrome://global/skin/checkbox/checkbox.png);
+}
+
+html|input[type="checkbox"]:not(:disabled) + html|label:hover:before {
+  background-image: url(chrome://global/skin/checkbox/checkbox-active.png);
+}
+
+html|input[type="checkbox"]:checked + html|label:before {
+  background-image: url(chrome://global/skin/checkbox/checkbox-checked.png);
+}
+
+html|input[type="checkbox"]:checked:not(:disabled) + html|label:hover:before {
+  background-image: url(chrome://global/skin/checkbox/checkbox-checked-active.png);
+}
+
+html|input[type="checkbox"]:disabled + html|label {
+  opacity: 0.5;
 }
