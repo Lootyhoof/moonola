@@ -104,6 +104,11 @@ tr:first-child td {
   border-top: 0;
 }
 
+td > table {
+  margin: -1px;
+  border: 0;
+}
+
 .prefs-table {
   width: 100%;
   table-layout: fixed;
@@ -120,7 +125,13 @@ tr:first-child td {
   white-space: nowrap;
   overflow: hidden;
 }
-#reset-box {
+
+#contents {
+  padding-top: 10px;
+}
+
+#reset-box,
+#action-box {
   float: right;
   width: 30%;
   color: #000;
@@ -131,6 +142,20 @@ tr:first-child td {
   background-color: #f0f0f0;
 }
 
+#action-box,
+#action-box > #reset-box,
+#safe-mode-box {
+  display: none;
+}
+
+#action-box > #reset-box {
+  float: none;
+  width: auto;
+  margin: initial;
+  padding: initial;
+  border: none;
+}
+
 #reset-box > h3 {
   margin-top: 0;
 }
@@ -138,4 +163,16 @@ tr:first-child td {
 #reset-box > button {
   display: block;
   margin: auto;
+}
+
+#action-box > #reset-box > button {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
