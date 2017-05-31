@@ -1,4 +1,10 @@
 @import url(chrome://global/skin/inContentUI.css);
+#permissions-pagetitle {
+  font-size: 200%;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+
 #permissions-page {
   color: #000;
   padding: 10px;
@@ -58,31 +64,33 @@
   margin: 10px 10px 0 5px;
 }
 
-.pref-icon[type=password] {
-  list-style-image: url(chrome://mozapps/skin/passwordmgr/key-48.png);
-}
-
 .pref-icon[type=cookie],
 .pref-icon[type=indexedDB],
 .pref-icon[type=popup],
-.pref-icon[type=image] {
+.pref-icon[type=image],
+.pref-icon[type=fullscreen],
+.pref-icon[type=pointerLock] {
   list-style-image: url(chrome://browser/skin/icons/question.png);
+}
+
+.pref-icon[type=password] {
+  list-style-image: url(chrome://mozapps/skin/passwordmgr/key-48.png);
 }
 
 .pref-icon[type=geo] {
   list-style-image: url(chrome://browser/skin/icons/Geo-48.png);
 }
 
+.pref-icon[type=desktop-notification] {
+  list-style-image: url(chrome://browser/skin/preferences/notify.png);
+}
+
 .pref-icon[type=install] {
-  list-style-image: url(chrome://mozapps/skin/xpinstall/xpinstallItemGeneric.png);
+  list-style-image: url(chrome://mozapps/skin/extensions/extension.png);
 }
 
 .pref-icon[type=plugins] {
   list-style-image: url(chrome://mozapps/skin/plugins/pluginGeneric.png);
-}
-
-.pref-icon[type=fullscreen] {
-  list-style-image: url(chrome://browser/skin/icons/question.png);
 }
 
 .pref-title {
