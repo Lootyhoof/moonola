@@ -21,11 +21,6 @@ notification[type=critical] {
   border-top: 1px solid #808080 !important;
 }
 
-.messageText > .text-link {
-  color: inherit !important;
-  text-decoration: underline;
-}
-
 .messageImage {
   width: 16px;
   height: 16px;
@@ -48,16 +43,28 @@ notification[value=password-save] .messageImage {
   background-image: url(chrome://browser/skin/icons/lock-secure.png);
 }
 
+.popup-notification-body,
 .popup-notification-description {
   max-width: 30em;
 }
 
 .popup-notification-learnmore-link {
-  margin-top: 1em !important;
+  margin-top: .5em !important;
 }
 
 .popup-notification-learnmore-link:not([href]) {
   display: none;
+}
+
+.popup-notification-origin:not([value]),
+.popup-notification-originHost:not([value]),
+.popup-notification-learnmore-link:not([href]) {
+  display: none;
+}
+
+.popup-notification-origin,
+.popup-notification-originHost {
+  margin-bottom: .3em !important;
 }
 
 .popup-notification-menubutton > menupopup menuitem {
@@ -76,4 +83,42 @@ notification[value=password-save] .messageImage {
 
 .popup-notification-closebutton {
   margin: -8px -8px 0 0;
+}
+
+.popup-notification-button-container {
+  -moz-box-pack: end
+}
+
+.popup-notification-button-container > .popup-notification-button {
+  min-width: 80px;
+  padding: 2px 6px;
+}
+
+.popup-notification-button-container > .popup-notification-button[default] {
+  list-style-image: url(chrome://global/skin/CuteMenus/accept.png);
+}
+
+.popup-notification-button-container > .popup-notification-button[anonid=secondarybutton] {
+  list-style-image:url(chrome://global/skin/icons/Close.png);
+  -moz-image-region: rect(0 16px 16px 0);
+}
+
+#addon-install-restart-notification .popup-notification-button-container > .popup-notification-button {
+  list-style-image: url(chrome://global/skin/CuteMenus/reload.png);
+}
+
+.popup-notification-button-container > .popup-notification-button[default] {
+  order: -1;
+}
+
+.popup-notification-button-container > toolbarseparator {
+  display: none;
+}
+
+.popup-notification-button-container > .popup-notification-dropmarker {
+  min-width: 0;
+  margin-left: -8px;
+  padding: 2px 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
