@@ -461,6 +461,10 @@ menuitem[command="cmd_CustomizeToolbars"],#menuitem_options_clone {
   list-style-image:url(chrome://browser/skin/icons/lock-secure.png);
 }
 
+#appmenu_permissions,#menu_openPermissions{
+  list-style-image:url(chrome://global/skin/CuteMenus/permission.png);
+}
+
 #privateBrowsingItem,#appmenu_privateBrowsing,#menu_newPrivateWindow,
 #appmenu_newPrivateWindow,#context-openlinkprivate {
   list-style-image:url(chrome://browser/skin/icons/Privacy-16.png);
