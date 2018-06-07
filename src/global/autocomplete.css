@@ -23,50 +23,61 @@ textbox:not(.padded) {
 /* autocomplete popups */
 panel[type=autocomplete],
 panel[type=autocomplete-richlistbox],
-.autocomplete-history-popup {
+.autocomplete-history-popup,
+panel[type=private-autocomplete],
+panel[type=private-autocomplete-richlistbox],
+.private-autocomplete-history-popup {
   padding: 0;
   margin-top: -1px;
   border-color: #808080;
   background-color: #dadce4;
 }
 
-.autocomplete-history-popup {
+.autocomplete-history-popup,
+.private-autocomplete-history-popup {
   max-height: 180px;
 }
 
 /* tree */
-.autocomplete-tree {
+.autocomplete-tree,
+.private-autocomplete-tree {
   -moz-appearance: none !important;
   border: 0 !important;
   background-color: transparent !important;
 }
 
-.autocomplete-treecol {
+.autocomplete-treecol,
+.private-autocomplete-treecol {
   margin: 0 !important;
   border: 0 !important;
   padding: 0 !important;
 }
 
-.autocomplete-treebody::-moz-tree-cell-text {
+.autocomplete-treebody::-moz-tree-cell-text,
+.private-autocomplete-treebody::-moz-tree-cell-text {
   padding-left: 8px;
 }
 
-.autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue) {
+.autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue),
+.private-autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue) {
   max-width: 16px;
   height:16px;
 }
 
 /* richlistbox autocomplete */
-.autocomplete-richlistbox {
+.autocomplete-richlistbox,
+.private-autocomplete-richlistbox {
   margin: 0;
   border: 0 !important;
 }
 
-.autocomplete-richlistitem {
+.autocomplete-richlistitem,
+.private-autocomplete-richlistitem {
   padding: 1px 2px;
 }
 
-.autocomplete-richlistitem:not(:first-child) {
+.autocomplete-richlistitem:not(:first-child),
+.private-autocomplete-richlistitem:not(:first-child) {
   border-top: 1px solid #c0c0c0;
 }
 
@@ -119,7 +130,8 @@ html|span.ac-emphasize-alt {
   overflow: hidden;
 }
 
-.autocomplete-richlistitem[type=tag] > hbox > .ac-title {
+.autocomplete-richlistitem[type=tag] > hbox > .ac-title,
+.private-autocomplete-richlistitem[type=tag] > hbox > .ac-title {
  color: #0acf00;
 }
 

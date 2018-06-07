@@ -1548,84 +1548,6 @@ richlistitem[actiontype=switchtab] > .ac-url-box > .ac-url > .ac-url-text {
   background-color: #1f9afd;
 }
 
-#social-share-button {
-  margin: 1px;
-  list-style-image: url(icons/share.png);
-}
-
-#social-share-button > .toolbarbutton-icon {
-  width: 16px;
-  height: 16px;
-  margin: 0;
-}
-
-#social-share-button:not([disabled]):hover > .toolbarbutton-icon {
-  width: 14px;
-  height: 14px;
-  margin: 1px;
-}
-
-.social-share-toolbar {
-  border-right: 1px solid #e2e5e8;
-  background: linear-gradient(#ffffff,#f5f7fa);
-}
-
-#social-share-provider-buttons {
-  padding: 6px;
-}
-
-#social-share-provider-buttons > .share-provider-button {
-  margin: 1px;
-  padding: 5px;
-  border: none;
-  border-radius: 2px;
-  background: none;
-}
-
-#social-share-provider-buttons > .share-provider-button > .toolbarbutton-text {
-  display: none;
-}
-#social-share-provider-buttons > .share-provider-button > .toolbarbutton-icon {
-  width: 16px;
-  min-height: 16px;
-  max-height: 16px;
-}
-
-.social-panel > .social-panel-frame {
-  border-radius: inherit;
-}
-
-#social-share-panel {
-  max-height: 600px;
-  min-height: 100px;
-  max-width: 800px;
-  min-width: 300px;
-}
-
-.social-share-frame {
-  width: 300px;
-  height: 150px;
-  background: linear-gradient(#f0f4f7,#fafbfc);
-  transition: height 100ms ease-out, width 100ms ease-out;
-}
-
-#social-share-panel > .social-share-toolbar {
-  border-top-left-radius: inherit;
-  border-bottom-left-radius: inherit;
-}
-
-#social-share-provider-buttons {
-  border-top-left-radius: inherit;
-  border-bottom-left-radius: inherit;
-}
-
-#share-button,
-#social-mark-button {
-  width: 16px;
-  height: 16px;
-  margin-left: 2px;
-}
-
 /* star button */
 #star-button {
   padding: 0 2px;
@@ -2468,6 +2390,12 @@ toolbar[mode=text] > #window-controls > toolbarbutton > .toolbarbutton-text {
   list-style-image: url(chrome://mozapps/skin/xpinstall/xpinstallItemGeneric.png);
 }
 
+.popup-notification-icon[popupid=addon-theme-change] {
+  list-style-image: url(chrome://mozapps/skin/extensions/themeGeneric.png);
+  width: 32px;
+  height: 32px;
+}
+
 .popup-notification-icon[popupid=click-to-play-plugins] {
   width: 32px;
   height: 32px;
@@ -2995,318 +2923,6 @@ list-style-image: url(chrome://global/skin/CuteMenus/bookmarkbar.png);
 
 .panel-promo-closebutton:hover:active {
   -moz-image-region: rect(0 48px 16px 32px);
-}
-
-#social-sidebar-box {
-  border-top: 1px solid #808080;
-}
-
-#social-toolbar-item {
-  margin: 2px;
-  padding: 1px;
-  box-shadow: 0 0 2px rgba(31,154,253,.6) inset;
-}
-
-#social-toolbar-item > .toolbarbutton-1 {
-  min-width: 0;
-  margin: 0 1px;
-}
-
-#social-provider-button {
-  list-style-image: url(icons/social.png);
-  -moz-image-region: rect(0 16px 16px 0);
-}
-
-#social-provider-button > dropmarker {
-  display: none;
-}
-
-.social-notification-icon-container {
-  position: relative;
-  cursor: pointer;
-}
-
-.social-notification-icon-stack:not([disabled=true]),
-#social-toolbar-item .toolbarbutton-icon {
-  width: 16px !important;
-  height: 16px !important;
-  margin: 0 !important;
-  padding-top: 0 !important;
-}
-
-.toolbarbutton-1:hover .social-notification-icon-image,
-#social-toolbar-item .toolbarbutton-1:hover .toolbarbutton-icon {
-  width: 14px !important;
-  height: 14px !important;
-  margin: 1px !important
-}
-
-.social-notification-icon-hbox {
-  pointer-events: none;
-  margin-top: -5px;
-  margin-right: -8px;
-}
-
-.social-notification-icon-label {
-  text-align: end;
-  font-size: 9px;
-  font-weight: bold;
-  color: #fff;
-  padding: 0 1px;
-  border: 1px solid #d83722;
-  border-radius: 2px;
-  background-color: #f03d25;
-  box-shadow: 0 1px 0 rgba(0,39,121,.77);
-}
-
-.social-notification-icon-label[value=""] {
-  display: none;
-}
-
-.social-activation-icon {
-  width: auto;
-  height: auto;
-  max-height: 48px;
-  max-width: 48px;
-}
-
-#social-activation-message {
-  max-width: 250px;
-}
-
-#social-statusarea-popup,
-.social-statusarea-popup {
-  margin: 0 -12px;
-  border-radius: 5px;
-}
-
-#social-statusarea-user,
-.social-statusarea-user {
-  cursor: default;
-  position: relative;
-  color: #000;
-  text-shadow: none;
-  list-style-image:url(chrome://global/skin/icons/information-48.png);
-  border: 0;
-  border-bottom: 2px groove #d4d0c8;
-  background: #dadce4;
-}
-
-#social-statusarea-user-portrait,
-.social-statusarea-user-portrait {
-  width: 48px;
-  height: 48px;
-  min-height: 48px;
-  margin: 2px;
-  border-radius: 2px;
-}
-
-.social-statusarea-loggedInStatus,
-#social-statusarea-user > vbox > #social-statusarea-notloggedin,
-#social-statusarea-user > vbox > #social-statusarea-username {
-  cursor: pointer;
-  color: #1f9afd;
-  font-weight: bold;
-  min-width: 0;
-  margin: 0 6px;
-  list-style-image: none;
-  border: 0;
-  background: none;
-}
-
-#social-statusarea-user[_moz-menuactive] > vbox > #social-statusarea-notloggedin,
-#social-statusarea-user[_moz-menuactive] > vbox > #social-statusarea-username,
-.social-statusarea-user[_moz-menuactive] > vbox > .social-statusarea-loggedInStatus {
-  color: #00f;
-}
-
-#socialUserPortrait {
-  width: 48px;
-  height: 48px;
-  list-style-image:url(chrome://global/skin/icons/information-32.png);
-}
-
-#socialUserDisplayName,
-#socialUserPortrait {
-  cursor: pointer;
-}
-
-#socialUserDisplayName {
-  color: #1f9afd;
-  font-size: 130%;
-  font-weight: bold;
-  margin-top: 0;
-  padding-top: 0;
-  border: none;
-  background-color: transparent;
-}
-
-#socialUserDisplayName > .button-box {
-  padding-top: 0;
-  padding-left: 0;
-  border-top-width: 0;
-}
-
-#socialUserDisplayName:hover {
-  color: #00f;
-}
-
-#unsharePopupText {
-  height: 48px;
-}
-
-#unsharePopupBottomButtons {
-  margin-top: 1em;
-}
-
-.chat-status-icon {
-  max-height: 16px;
-  max-width: 16px;
-  padding: 0;
-}
-
-.chat-toolbarbutton {
-  margin-bottom: -1px;
-  padding: 0;
-}
-
-.chat-toolbarbutton > .toolbarbutton-text {
-  display: none;
-}
-
-.chat-close-button {
-  list-style-image: url(chrome://browser/skin/icons/close.png);
-}
-
-.chat-close-button:hover,
-.chat-close-button:hover:active {
-  list-style-image: url(chrome://browser/skin/icons/closeX.png);
-}
-
-.chat-minimize-button {
-  list-style-image: url(chrome://browser/skin/icons/minimize.png);
-}
-
-.chat-minimize-button:hover,
-.chat-minimize-button:hover:active {
-  list-style-image: url(chrome://browser/skin/icons/minimizeX.png);
-}
-
-.chat-swap-button {
-  list-style-image: url(chrome://browser/skin/icons/restore.png);
-}
-
-.chat-swap-button:hover,
-.chat-swap-button:hover:active {
-  list-style-image: url(chrome://browser/skin/icons/restoreX.png);
-}
-
-chatbar > chatbox > .chat-titlebar > .chat-swap-button:hover,
-chatbar > chatbox > .chat-titlebar > .chat-swap-button:hover:active {
-  list-style-image: url(chrome://browser/skin/icons/restoreO.png);
-}
-
-.chat-title {
-  cursor: inherit;
-  font-weight: bold;
-  color: #000;
-  text-shadow: none;
-}
-
-.chat-titlebar {
-  height: 20px;
-  min-height: 20px;
-  width: 100%;
-  margin: 0;
-  padding: 2px;
-  border: none;
-  border-bottom: 1px solid #808080;
-  background: linear-gradient(#e8e8ec,#adaebb);
-}
-
-.chat-titlebar[minimized=true] {
-  border-bottom: none;
-}
-
-.chat-titlebar > .notification-anchor-icon {
-  margin-left: 2px;
-  margin-right: 2px;
-}
-
-.chat-frame {
-  overflow: hidden;
-}
-
-.chatbar-button {
-  list-style-image: url(chrome://browser/skin/social/social.png);
-  height: 21px;
-  width: 21px;
-  margin: 0;
-  padding: 2px;
-  border: none;
-  border-top: 1px solid #808080;
-  border-right: 1px solid #808080;
-  background: linear-gradient(#e8e8ec,#adaebb);
-}
-
-.chatbar-button > .button-box > .box-inherit > .button-icon {
-  width: auto;
-  height: auto;
-  max-width: 16px;
-  max-height: 16px;
-}
-
-.chatbar-button[open=true] .button-icon,
-.chatbar-button:hover .button-icon,
-.chatbar-button:active:hover .button-icon {
-  max-height: 14px;
-  max-width: 14px;
-  margin: 1px;
-}
-
-.chatbar-button > .toolbarbutton-text,
-.chatbar-button > .toolbarbutton-menu-dropmarker {
-  display: none;
-}
-
-.chatbar-button[activity] {
-  border-radius: 3px;
-  box-shadow: 0 0 11px #1f9afd inset,0 0 5px #1f9afd inset,0 0 2px #1f9afd inset;
-}
-
-.chatbar-button > menupopup > menuitem[activity] {
-  font-weight: bold;
-}
-
-.chatbar-innerbox {
-  overflow: hidden;
-  margin: -285px -1px 0 -1px;
-  background: transparent;
-}
-
-chatbar {
-  margin-right: 20px;
-}
-
-chatbox {
-  height: 285px;
-  width: 260px;
-  margin-left: 4px;
-  border: 1px solid #808080;
-  border-bottom: none;
-  background-color: #f2f2f2;
-}
-
-chatbox[minimized=true] {
-  width: 160px;
-  height: 20px;
-  border-bottom: none;
-}
-
-window > chatbox {
-  margin: 0;
-  padding: 0;
-  border: none;
 }
 
 /* Responsive Mode */
@@ -3918,5 +3534,46 @@ html|*#gcli-output-frame {
   background-image: linear-gradient(#B4211B, #8A1915);
   border-radius: 1px;
   -moz-margin-end: 5px;
+}
+
+/* Badge toolbar item */
+
+.toolbarbutton-badge-container,
+.toolbarbutton-badge-stack {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#navigator-toolbox[iconsize=large][mode=icons] > #nav-bar .toolbarbutton-1 > .toolbarbutton-badge-container,
+#navigator-toolbox[iconsize=large][mode=icons] > #nav-bar .toolbarbutton-1 > .toolbarbutton-badge-stack {
+  padding: 2px 5px;
+}
+
+.toolbarbutton-1 > .toolbarbutton-badge-container > .toolbar-icon,
+.toolbarbutton-1 > .toolbarbutton-badge-stack > .toolbar-icon {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.toolbarbutton-badge-container > .toolbarbutton-icon[label]:not([label=""]),
+.toolbarbutton-badge-stack > .toolbarbutton-icon[label]:not([label=""]) {
+  -moz-margin-end: 0;
+}
+
+#navigator-toolbox[iconsize=large][mode=icons] > #nav-bar *|* > .toolbarbutton-badge[badge]:not([badge=""])::after {
+  top: 1px;
+  right: 1px;
+}
+
+.toolbarbutton-badge[badge]:not([badge=""]):-moz-locale-dir(rtl)::after {
+  left: 0;
+  right: auto;
+}
+
+#navigator-toolbox[iconsize=large][mode=icons] > #nav-bar *|* > .toolbarbutton-badge[badge]:not([badge=""]):-moz-locale-dir(rtl)::after {
+  left: 1px;
+  right: auto;
 }
 
