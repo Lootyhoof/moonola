@@ -65,6 +65,10 @@
   box-shadow: 0 0 5px rgba(255,255,255,.5) inset;
 }
 
+#main-window[privatebrowsingmode=temporary] #appmenu-button {
+  list-style-image: url(chrome://browser/skin/icons/Privacy-16.png);
+}
+
 #appmenu-button:hover:not(:active):not([open]) {
   background-color: #1f9afd;
 }
@@ -3582,5 +3586,15 @@ html|*#gcli-output-frame {
 #navigator-toolbox[iconsize=large][mode=icons] > #nav-bar *|* > .toolbarbutton-badge[badge]:not([badge=""]):-moz-locale-dir(rtl)::after {
   left: 1px;
   right: auto;
+}
+
+#main-window[privatebrowsingmode=temporary] #toolbar-menubar {
+  background-image: url("chrome://browser/skin/icons/Privacy-32.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+#main-window[privatebrowsingmode=temporary] #toolbar-menubar:-moz-locale-dir(rtl) {
+  background-position: top left;
 }
 

@@ -22,6 +22,10 @@
   box-shadow: 0 0 5px rgba(255,255,255,.5) inset;
 }
 
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button {
+  list-style-image: url(chrome://browser/skin/icons/Privacy-16.png);
+}
+
 #appmenu-toolbar-button:hover:not(:active):not([open]) {
   background-color: #1f9afd;
 }
