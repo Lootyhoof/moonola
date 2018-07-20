@@ -26,8 +26,7 @@ window:not([active=true]) .tabbrowser-strip > .tabbrowser-tabs {
   height: 2px !important;
 }
 
-#titlebar-buttonbox-container,
-#main-window:not([drawintitlebar=true]) > #titlebar {
+#main-window:not([drawintitlebar=true]):not(:-moz-lwtheme) > #titlebar {
   display: none;
 }
 
@@ -36,4 +35,20 @@ window:not([active=true]) .tabbrowser-strip > .tabbrowser-tabs {
   height: 22px !important;
   margin-top: 0 !important;
   border-top: 0 !important;
+}
+
+#titlebar-spacer {
+  display: none;
+}
+
+#titlebar-buttonbox-container {
+  margin-left: 7px;
+  margin-top: 3px;
+}
+
+#main-window[privatebrowsingmode=temporary] #TabsToolbar::before {
+  display: -moz-box;
+  content: "";
+  background: url("chrome://browser/skin/icons/Privacy-32.png") center no-repeat;
+  width: 40px;
 }
