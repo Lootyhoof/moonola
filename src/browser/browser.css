@@ -2421,7 +2421,8 @@ toolbar[mode=text] > #window-controls > toolbarbutton > .toolbarbutton-text {
 }
 
 .popup-notification-icon[popupid=password-save],
-.popup-notification-icon[popupid=password-change] {
+.popup-notification-icon[popupid=password-change],
+.popup-notification-icon[popupid=password] {
   list-style-image: url(chrome://mozapps/skin/passwordmgr/key-48.png);
 }
 
