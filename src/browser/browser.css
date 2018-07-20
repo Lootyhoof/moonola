@@ -1681,6 +1681,12 @@ richlistitem[actiontype=switchtab] > .ac-url-box > .ac-url > .ac-url-text {
   display: -moz-box;
 }
 
+.browserContainer > findbar {
+  background-color: transparent;
+  color: #000;
+  text-shadow: none;
+}
+
 /* Status panel */
 .statuspanel-label {
   text-shadow: none;
