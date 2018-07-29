@@ -5,6 +5,10 @@
   padding-bottom: 0.5em;
 }
 
+#permissions-content {
+  height: 100%;
+}
+
 #permissions-page {
   color: #000;
   padding: 10px;
