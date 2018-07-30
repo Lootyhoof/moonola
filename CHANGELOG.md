@@ -6,6 +6,7 @@
 - improve about:permissions sizing
 - fix disappearing titlebar in private and lwtheme modes on macOS
 - fix favicon sizes in password manager
+- add private browsing indicators
 
 ### 1.7.0
 - add initial Pale Moon 28 support
