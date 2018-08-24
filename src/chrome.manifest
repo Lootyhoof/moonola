@@ -1,11 +1,11 @@
-skin	browser	moonola browser/
-skin	communicator	moonola communicator/
-skin	help	moonola help/
-skin	global	moonola global/
-skin	mozapps	moonola mozapps/
+skin	browser	moonola chrome/browser/
+skin	communicator	moonola chrome/communicator/
+skin	help	moonola chrome/help/
+skin	global	moonola chrome/global/
+skin	mozapps	moonola chrome/mozapps/
 
-skin	os	moonola os/darwin/	os=Darwin
-skin	os	moonola os/linux/	os=Linux
-skin	os	moonola os/winnt/	os=WINNT
+skin	os	moonola chrome/os/darwin/	os=Darwin
+skin	os	moonola chrome/os/linux/	os=Linux
+skin	os	moonola chrome/os/winnt/	os=WINNT
 
 override chrome://browser/skin/autocomplete.css chrome://global/skin/autocomplete.css
