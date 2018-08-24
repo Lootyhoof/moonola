@@ -9,4 +9,3 @@ skin	os	moonola os/linux/	os=Linux
 skin	os	moonola os/winnt/	os=WINNT
 
 override chrome://browser/skin/autocomplete.css chrome://global/skin/autocomplete.css
-override chrome://browser/skin/permissions/aboutPermissions.css chrome://browser/skin/preferences/aboutPermissions.css
