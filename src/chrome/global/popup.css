@@ -46,7 +46,6 @@ menulist > menupopup {
 panel[type=arrow] {
   border: 0;
   background: transparent;
-  transition: opacity 300ms;
 }
 
 panel[type=arrow][side=top],
