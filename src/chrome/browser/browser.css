@@ -1372,7 +1372,7 @@ toolbar[iconsize=small] #feed-button {
 
 #urlbar-container + #search-container,
 #search-container + #urlbar-container {
-  -moz-margin-start: 3px !important;
+  margin-inline-start: 3px !important;
 }
 
 #urlbar-search-splitter {
@@ -1425,7 +1425,7 @@ toolbar[iconsize=small] #feed-button {
 }
 
 statusbarpanel#statusbar-display {
-  -moz-padding-start: 0;
+  padding-inline-start: 0;
 }
 
 /* autocomplete */
@@ -1900,7 +1900,7 @@ tab.tabbrowser-tab[pending] {
   height: 16px;
   margin-top: -16px;
   /* set to -1/2 indicator width: */
-  -moz-margin-start: -8px;
+  margin-inline-start: -8px;
 }
 
 .tab-drop-indicator {
@@ -2200,7 +2200,7 @@ toolbar[mode=text] > #window-controls > toolbarbutton > .toolbarbutton-text {
 .menupopup-drop-indicator {
   height: 2px;
   list-style-image: none;
-  -moz-margin-end: -4em;
+  margin-inline-end: -4em;
   background-color: #000;
 }
 
@@ -3053,7 +3053,7 @@ list-style-image: url(chrome://global/skin/CuteMenus/bookmarkbar.png);
   -moz-appearance: none;
   color: inherit;
   border-width: 0;
-  -moz-border-end: 1px solid hsla(210,8%,5%,.45);
+  border-inline-end: 1px solid hsla(210,8%,5%,.45);
   box-shadow: -1px 0 0 hsla(210,16%,76%,.15) inset, 1px 0 0 hsla(210,16%,76%,.15);
 }
 
@@ -3500,7 +3500,7 @@ html|*#gcli-output-frame {
 }
 
 .center-item-label {
-  -moz-margin-start: 6px;
+  margin-inline-start: 6px;
   margin-bottom: 0;
   text-overflow: ellipsis;
 }
@@ -3510,7 +3510,7 @@ html|*#gcli-output-frame {
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
-  -moz-margin-start: 6px;
+  margin-inline-start: 6px;
 }
 
 .click-to-play-plugins-notification-button-container {
@@ -3544,7 +3544,7 @@ html|*#gcli-output-frame {
   text-shadow: none;
   background-image: linear-gradient(#B4211B, #8A1915);
   border-radius: 1px;
-  -moz-margin-end: 5px;
+  margin-inline-end: 5px;
 }
 
 /* Badge toolbar item */
@@ -3566,7 +3566,7 @@ html|*#gcli-output-frame {
 }
 
 .toolbarbutton-badge-stack > .toolbarbutton-icon[label]:not([label=""]) {
-  -moz-margin-end: 0;
+  margin-inline-end: 0;
 }
 
 #navigator-toolbox[iconsize=large][mode=icons] > #nav-bar *|* > .toolbarbutton-badge[badge]:not([badge=""])::after {

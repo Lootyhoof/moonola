@@ -17,5 +17,5 @@
 }
 
 .small-indent label {
-  -moz-margin-start: 0;
+  margin-inline-start: 0;
 }

@@ -1870,11 +1870,11 @@ toolbar[iconsize=small] #status4evar-download-button {
 }
 
 toolbar[mode=icons] #status4evar-download-button[forcelabel=true]:hover > image {
-  -moz-margin-end: 7px !important;
+  margin-inline-end: 7px !important;
 }
 
 #addon-bar #status4evar-download-button[forcelabel=true]:hover > image {
-  -moz-margin-end: 6px !important;
+  margin-inline-end: 6px !important;
 }
 
 #addon-bar #status4evar-download-button:hover > .toolbarbutton-icon {

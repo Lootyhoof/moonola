@@ -1037,7 +1037,7 @@ button[anonid=preferences-btn] {
 
 .discover-logo {
   list-style-image: url(chrome://mozapps/skin/extensions/discover-logo.png);
-  -moz-margin-end: 15px;
+  margin-inline-end: 15px;
 }
 
 .discover-title {
