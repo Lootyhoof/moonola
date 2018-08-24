@@ -4,9 +4,9 @@ skin	help	moonola help/
 skin	global	moonola global/
 skin	mozapps	moonola mozapps/
 
-skin	os_special	moonola os_special/mac/	        os=Darwin
-skin	os_special	moonola os_special/linux/	os=Linux
-skin	os_special	moonola os_special/aero/	os=WINNT osversion>=6
+skin	os	moonola os/darwin/	os=Darwin
+skin	os	moonola os/linux/	os=Linux
+skin	os	moonola os/winnt/	os=WINNT
 
 skin	appver	moonola	appver/27/ appversion<28.0.0b1
 skin	appver	moonola	appver/28/ appversion>=28.0.0b1

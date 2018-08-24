@@ -1,5 +1,5 @@
 @import url(chrome://global/skin/);
-@import url(chrome://os_special/skin/browser.css);
+@import url(chrome://os/skin/browser.css);
 @import url(chrome://browser/skin/padlock/padlock.css);
 
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
