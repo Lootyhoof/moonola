@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.9.1
+- fix urlbar colors
+
 ### 1.9.0
 - sync global stylings with Pale Moon 28
 - remove redundant devtools styling
