@@ -1176,7 +1176,7 @@ toolbar:not([iconsize=small]) #sync-button[status=active] .toolbarbutton-icon {
   border-left: 1px solid #aaa;
 }
 
-#urlbar > .autocomplete-textbox-container {
+#urlbar > .private-autocomplete-textbox-container {
   -moz-box-align: stretch;
   direction: ltr;
 }
@@ -1263,33 +1263,33 @@ toolbar:not([iconsize=small]) #sync-button[status=active] .toolbarbutton-icon {
 }
 
 #identity-box.verifiedIdentity + .textbox-input-box,
-#urlbar[level=high] > .autocomplete-textbox-container {
+#urlbar[level=high] > .private-autocomplete-textbox-container {
   color: #0acf00;
 }
 #identity-box.verifiedDomain + .textbox-input-box {
   color: #6681ee;
 }
-#urlbar[level=low] > .autocomplete-textbox-container {
+#urlbar[level=low] > .private-autocomplete-textbox-container {
   color: #ded600;
 }
-#urlbar[level=broken] > .autocomplete-textbox-container {
+#urlbar[level=broken] > .private-autocomplete-textbox-container {
   color: #f00;
 }
 
-#urlbar .autocomplete-textbox-container:hover,
-#urlbar .autocomplete-textbox-container:active {
+#urlbar .private-autocomplete-textbox-container:hover,
+#urlbar .private-autocomplete-textbox-container:active {
   color: #00f;
 }
 
-#urlbar > .autocomplete-textbox-container > .textbox-input-box,
+#urlbar > .private-autocomplete-textbox-container > .textbox-input-box,
 #urlbar .urlbar-frontcap-and-textbox .urlbar-input-box,
-#urlbar .autocomplete-textbox-container-fission > .textbox-input-box {
+#urlbar .private-autocomplete-textbox-container-fission > .textbox-input-box {
   padding: 0 5px 0 8px;
   border-left: 1px solid #aaa;
 }
 
-#main-window[browsingmode=private] #urlbar .autocomplete-textbox-container .textbox-input-box,
-#main-window[privatebrowsingmode=temporary] #urlbar .autocomplete-textbox-container .textbox-input-box {
+#main-window[browsingmode=private] #urlbar .private-autocomplete-textbox-container .textbox-input-box,
+#main-window[privatebrowsingmode=temporary] #urlbar .private-autocomplete-textbox-container .textbox-input-box {
   padding-left: 22px;
   background: url(icons/identityendcap-privacy.png) left no-repeat;
 }
