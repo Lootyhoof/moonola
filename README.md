@@ -1,5 +1,5 @@
 # Moonola
-![Preview](http://i68.tinypic.com/o5do9y.png)
+![Preview](https://i.imgur.com/KwUuGK0.png)
 
 Fork of the theme "Nuvola FF" by Richard Marti for Pale Moon.
 
