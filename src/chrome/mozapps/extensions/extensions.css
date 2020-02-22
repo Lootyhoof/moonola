@@ -310,6 +310,10 @@
   background-image: linear-gradient(#ff0,#fc0);
 }
 
+.addon-view[notification=warning][native=false] .warning {
+  background-image: linear-gradient(#ffd900,#ffd000);
+}
+
 .addon-view[notification=error] .error {
   background-image: linear-gradient(#f88,#f00);
 }
