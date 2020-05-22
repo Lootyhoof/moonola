@@ -467,7 +467,7 @@ menuitem[command="cmd_CustomizeToolbars"],#menuitem_options_clone {
 
 #privateBrowsingItem,#appmenu_privateBrowsing,#menu_newPrivateWindow,
 #appmenu_newPrivateWindow,#context-openlinkprivate {
-  list-style-image:url(chrome://browser/skin/icons/Privacy-16.png);
+  list-style-image:url(chrome://browser/skin/Privacy-16.png);
 }
 
 #menuAltPlugins,#sync-loginitem,#cmRestorePoint-compact-extra-aboutPlugins,
