@@ -1925,10 +1925,6 @@ toolbar[mode=icons] #status4evar-download-button[forcelabel=true]:hover > image 
   -moz-image-region: rect(0 288px 32px 256px);
 }
 
-#status4evar-progress-bar[s4estyle=true] > .progress-bar {
-  background: url(chrome://global/skin/progressmeter/progress.gif) repeat-x left center !important;
-}
-
 .css-bg-editor > #navigator-toolbox {
   background: none;
 }
