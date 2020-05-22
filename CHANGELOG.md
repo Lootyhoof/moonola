@@ -1,5 +1,12 @@
 # Changelog
 
+### 1.12.0
+- improve integration with macOS
+- support other GTK-based operating systems
+- provide platform-specific custom statusbar styling to ensure it works in all platforms
+- ensure privacy icon is shown on tabs/urlbar when entering private mode
+- internal cleanup
+
 ### 1.11.2
 - Pale Moon 29: clarify the status of Firefox extensions in the Add-ons Manager
 
