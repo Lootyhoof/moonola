@@ -1274,6 +1274,10 @@ toolbar:not([iconsize=small]) #sync-button[status=active] .toolbarbutton-icon {
 #urlbar[level=low] > .private-autocomplete-textbox-container {
   color: #ded600;
 }
+#identity-box.mixedContent + .textbox-input-box,
+#urlbar[level=broken][security_level=mixed] > .private-autocomplete-textbox-container {
+  color: #ce9e36;
+}
 #urlbar[level=broken] > .private-autocomplete-textbox-container {
   color: #f00;
 }
@@ -2318,7 +2322,7 @@ toolbar[mode=text] > #window-controls > toolbarbutton > .toolbarbutton-text {
   text-shadow: -1px -1px 0 #888;
 }
 
-#identity-box.unknownIdentity > hbox > #identity-icon-label {
+#identity-box:not(.mixedContent).unknownIdentity > hbox > #identity-icon-label {
   color: #404040 !important;
   text-shadow: -1px -1px 0 #ddd;
 }
@@ -2338,6 +2342,10 @@ toolbar[mode=text] > #window-controls > toolbarbutton > .toolbarbutton-text {
 
 #identity-box.verifiedIdentity {
   background: url(icons/identitycap-identity.png) repeat-x;
+}
+
+#identity-box.mixedContent {
+  background: url(icons/identitycap-mixed.png) repeat-x;
 }
 
 #notification-popup-box:hover,
