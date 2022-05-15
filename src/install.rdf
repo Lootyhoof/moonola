@@ -9,14 +9,13 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>{6593fe23-6af4-4e1e-b98e-98e62085837f}</em:id>
-    <em:version>1.13.0</em:version>
+    <em:version>1.14.0</em:version>
     <em:name>Moonola</em:name>
     <em:description>Theme based on the Nuvola icon set. Fork of "Nuvola FF" by Richard Marti</em:description>
     <em:creator>Lootyhoof</em:creator>
     <em:type>4</em:type>
     <em:internalName>moonola</em:internalName>
     <em:skinnable>true</em:skinnable>
-    <em:updateURL>https://raw.githubusercontent.com/Lootyhoof/moonola/master/update.xml</em:updateURL>
 
     <em:contributor>Richard Marti</em:contributor>
     <em:contributor>David Vignoni</em:contributor>
